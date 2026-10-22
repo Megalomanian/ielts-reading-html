@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "title": "The Return of the Nightingale",
+    "subtitle": "IELTS Academic Reading · 原创演示案例",
+    "exam": "IELTS Academic Reading",
+    "source": "原创演示文本（非真题）",
+    "answerSource": "derived",
+    "timeLimit": 20,
+    "createdAt": "2026-10-22",
+    "note": "这是用于验收 HTML 生成器的原创示例，不是剑桥真题。"
+  },
+  "passages": [
+    {
+      "id": "p1",
+      "number": 1,
+      "title": "The Return of the Nightingale",
+      "intro": "You should spend about 20 minutes on Questions 1–10, which are based on Reading Passage 1 below.",
+      "paragraphs": [
+        {
+          "id": "A",
+          "label": "A",
+          "text": "Every spring, the nightingale's song returns to the woods and gardens of southern England. For centuries the bird has been celebrated in poetry for the richness of its voice, yet its habits remain surprisingly poorly understood. Nightingales are shy, brown birds that spend most of the year hidden in dense undergrowth, and they are far more often heard than seen. Even experienced birdwatchers may wait a whole morning for a glimpse of one."
+        },
+        {
+          "id": "B",
+          "label": "B",
+          "text": "In the 1950s, amateur recordists began noticing that nightingales in busy urban parks sang differently from those in quiet countryside. The urban birds produced songs with higher minimum frequencies and sang at night more often. At first these differences were dismissed as quirks of individual birds. Later studies, however, showed that the pattern was consistent across cities and across years."
+        },
+        {
+          "id": "C",
+          "label": "C",
+          "text": "The most obvious explanation is traffic noise. Low-frequency engine rumble can mask the lower notes of a nightingale's song, forcing the bird to shift its performance upwards. A study led by Dr Elena Marsh compared 12 populations in and around London. Birds living within 200 metres of a major road sang, on average, 6 decibels louder than birds in quieter sites. The shift was greatest at dawn, when traffic levels rise sharply."
+        },
+        {
+          "id": "D",
+          "label": "D",
+          "text": "Yet noise may not be the whole story. Nightingales also sing at night in cities, when traffic is lighter, so the need to compete with engines cannot explain everything. Marsh's team suggests that artificial light may play a role. Street lamps can make birds active for longer, and a longer singing period may allow them to attract mates while avoiding the hottest part of the day. The researchers are careful to say that this idea remains speculative."
+        },
+        {
+          "id": "E",
+          "label": "E",
+          "text": "Whatever the cause, the changes are not necessarily harmful. A louder, higher song may still carry the information that females need: how healthy a male is and how much energy he can invest in display. The real concern is that urban nightingale numbers have fallen by almost a third since 1990. Protecting the scrubby edges where the birds nest is likely to matter more than reducing the volume of their song."
+        }
+      ]
+    }
+  ],
+  "questionGroups": [
+    {
+      "id": "g1",
+      "passageId": "p1",
+      "range": "Questions 1–4",
+      "type": "true_false_not_given",
+      "instructions": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–4 on your answer sheet, write\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Nightingales are easier to hear than to see.",
+          "answer": "TRUE",
+          "analysis": "题干说夜莺“更容易被听到而不是看到”。上面回顾的 A 段原句里 {{more often heard than seen}} 与题干完全一致，因此答案为 TRUE。",
+          "keywords": [
+            {
+              "term": "more often heard than seen",
+              "anchor": {
+                "paraId": "A",
+                "quote": "they are far more often heard than seen"
+              }
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "The first people to notice the difference in urban songs were professional scientists.",
+          "answer": "FALSE",
+          "analysis": "题干把发现差异的人说成 professional scientists。上面回顾的 B 段原句里，{{amateur recordists}} 才是最早注意到差异的人；业余录音者与职业科学家直接矛盾，因此答案为 FALSE。",
+          "trap": "题干用 professional scientists 偷换原文的 amateur recordists，注意人物身份。",
+          "keywords": [
+            {
+              "term": "amateur recordists",
+              "anchor": {
+                "paraId": "B",
+                "quote": "In the 1950s, amateur recordists began noticing that nightingales in busy urban parks sang differently from those in quiet countryside."
+              }
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "All of the sites in Marsh's study were within 200 metres of a major road.",
+          "answer": "NOT GIVEN",
+          "analysis": "上面回顾的两句只说明 Marsh 团队比较了 {{12 populations}}，并单独提到 {{within 200 metres}} 的鸟更响；但没有说明所有研究地点都在 200 米内。题干把局部条件扩大成全部，原文没有依据，因此答案为 NOT GIVEN。",
+          "trap": "NOT GIVEN 不是“完全没提到夜莺”，而是题干的 all sites 这一具体范围没有依据。",
+          "keywords": [
+            {
+              "term": "12 populations",
+              "anchor": {
+                "paraId": "C",
+                "quote": "A study led by Dr Elena Marsh compared 12 populations in and around London."
+              }
+            },
+            {
+              "term": "within 200 metres",
+              "anchor": {
+                "paraId": "C",
+                "quote": "Birds living within 200 metres of a major road sang, on average, 6 decibels louder than birds in quieter sites."
+              }
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "Nightingales in noisy places sing more loudly than those in quieter places.",
+          "answer": "TRUE",
+          "analysis": "题干说噪音环境中的夜莺唱得更响。上面回顾的 C 段原句给出 {{6 decibels louder}} 的直接比较，说明靠近主干道的鸟确实唱得更响，因此答案为 TRUE。",
+          "keywords": [
+            {
+              "term": "6 decibels louder",
+              "anchor": {
+                "paraId": "C",
+                "quote": "Birds living within 200 metres of a major road sang, on average, 6 decibels louder than birds in quieter sites."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g2",
+      "passageId": "p1",
+      "range": "Questions 5–7",
+      "type": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questions": [
+        {
+          "number": 5,
+          "stem": "According to paragraph C, why do urban nightingales sing at a higher pitch?",
+          "options": [
+            {"label": "A", "text": "to attract mates"},
+            {"label": "B", "text": "because low engine noise covers their lower notes"},
+            {"label": "C", "text": "to warn other males away"},
+            {"label": "D", "text": "because street lamps make them active"}
+          ],
+          "answer": "B",
+          "analysis": "题干问“为什么城市夜莺的音高更高”。上面回顾的 C 段原句说低沉的引擎声会 {{mask the lower notes}}，鸟被迫把歌声往上移；B 选项正是这个意思。A、D 是 D 段才讨论的配偶与灯光，C 项原文未提。因此选 B。",
+          "keywords": [
+            {
+              "term": "mask the lower notes",
+              "anchor": {
+                "paraId": "C",
+                "quote": "Low-frequency engine rumble can mask the lower notes of a nightingale's song, forcing the bird to shift its performance upwards."
+              }
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "What does Marsh's team admit about the artificial-light explanation?",
+          "options": [
+            {"label": "A", "text": "It has been proved by several studies."},
+            {"label": "B", "text": "It is only a possibility."},
+            {"label": "C", "text": "It applies to every urban bird."},
+            {"label": "D", "text": "It is less likely than the noise explanation."}
+          ],
+          "answer": "B",
+          "analysis": "题干问 Marsh 团队对“人工光”解释的态度。上面回顾的 D 段原句说 {{remains speculative}}，即这只是推测、尚未证实；B 选项 only a possibility 是同义替换。A、C 过度绝对，D 原文没有比较两者可能性。因此选 B。",
+          "keywords": [
+            {
+              "term": "remains speculative",
+              "anchor": {
+                "paraId": "D",
+                "quote": "The researchers are careful to say that this idea remains speculative."
+              }
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "The writer suggests that the most important way to help urban nightingales is to",
+          "options": [
+            {"label": "A", "text": "reduce traffic noise."},
+            {"label": "B", "text": "provide more street lamps."},
+            {"label": "C", "text": "protect their nesting habitats."},
+            {"label": "D", "text": "lengthen their singing periods."}
+          ],
+          "answer": "C",
+          "analysis": "题干问作者认为最重要的帮助方式。上面回顾的 E 段原句说 {{protecting the scrubby edges}} 比降低歌声音量更重要；C 选项 protect their nesting habitats 是同义替换，A 反而被原文降级。因此选 C。",
+          "keywords": [
+            {
+              "term": "protecting the scrubby edges",
+              "anchor": {
+                "paraId": "E",
+                "quote": "Protecting the scrubby edges where the birds nest is likely to matter more than reducing the volume of their song."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g3",
+      "passageId": "p1",
+      "range": "Questions 8–10",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below.\nChoose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+      "questions": [
+        {
+          "number": 8,
+          "stem": "Low-frequency traffic noise can ______ the lower notes of a nightingale's song.",
+          "answer": "mask",
+          "analysis": "空格前的 can 后面需要动词。上面回顾的 C 段原句里 {{mask}} 与题干的 traffic noise 对应，因此填 mask。",
+          "keywords": [
+            {
+              "term": "mask",
+              "anchor": {
+                "paraId": "C",
+                "quote": "Low-frequency engine rumble can mask the lower notes of a nightingale's song"
+              }
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "Birds near major roads sang about ______ decibels louder.",
+          "answer": "6",
+          "answerText": "6（six）",
+          "analysis": "题干问高出多少分贝。上面回顾的 C 段原句给出 {{6 decibels louder}}，空格前是 about，填 6（也可写 six）。",
+          "keywords": [
+            {
+              "term": "6 decibels louder",
+              "anchor": {
+                "paraId": "C",
+                "quote": "Birds living within 200 metres of a major road sang, on average, 6 decibels louder than birds in quieter sites."
+              }
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "Urban nightingale numbers have fallen by almost ______ since 1990.",
+          "answer": "a third",
+          "answerText": "a third / one third",
+          "analysis": "题干问下降比例。上面回顾的 E 段原句说下降 almost {{a third}}，almost 与题干对应，因此填 a third（也可写 one third）。",
+          "keywords": [
+            {
+              "term": "a third",
+              "anchor": {
+                "paraId": "E",
+                "quote": "urban nightingale numbers have fallen by almost a third since 1990"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
