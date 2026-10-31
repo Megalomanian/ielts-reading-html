@@ -1,0 +1,496 @@
+{
+  "kicker": "Sentence bank",
+  "headline": "句式工具箱 · 换一道题也还能用的句子",
+  "lead": "下面这些不是「高级词汇」，是<strong>骨架</strong>：带底线的部分换成你自己的内容，其余词原样保留，句子就成立——所以能跨题复用。每条都写清「为什么这么写」，再加一条「别这么写」；后者比前者更值钱，因为分基本都丢在误用上。<strong>背支架，不背句子</strong>：考场上真正省时间的是「这一段该用哪种句式」。",
+  "note": "",
+  "groups": [
+    {
+      "id": "t1-open",
+      "task": "task1",
+      "title": "Task 1 · 开头改写",
+      "sub": "一句话交代身份，不评价、不写数字",
+      "items": [
+        {
+          "frame": "The [[line graph]] compares [[the number of visitors to three London museums]] in [[London]] over [[a twenty-year period]].",
+          "zh": "四件事各占一个位置：图表类型、对象、地点或范围、时间跨度。四块齐全，比只写「图表显示了……」更像 7 分。",
+          "warn": "不要照抄题目原句。同样的信息换掉主谓就算改写，一字不改照搬会被判为没有改写能力。"
+        },
+        {
+          "frame": "The [[bar chart]] shows how [[the share of renewable energy]] changed between [[2000]] and [[2020]].",
+          "zh": "题目本身是个 how 从句时，用 shows how + 变化动词；比 shows the changes in 更短、更自然。",
+          "warn": "不要用 shows the trend of 开头——那是机构模板的标志，而且只有两个时间点时 trend 并不准确。"
+        },
+        {
+          "frame": "The table gives a breakdown of [[student enrolment in higher education]] across [[six countries]] in [[2019]].",
+          "zh": "静态表格用 breakdown of / figures for，不用 change——没有时间轴就没有「变化」可言。",
+          "warn": "表格题写 change / increase 是硬伤，会被判成误读图表。"
+        },
+        {
+          "frame": "The two maps show [[the same coastal area]] before and after [[a large-scale redevelopment]].",
+          "zh": "双图题要把「同一地点、两个时点」说明白，before and after 一句话解决。",
+          "warn": "不要分别介绍两张图；读者必须先知道它们描述的是同一个地方。"
+        },
+        {
+          "frame": "The diagram outlines the stages by which [[waste paper]] is [[recycled]].",
+          "zh": "流程图用 the stages by which / the process of，动词用一般现在时被动语态。",
+          "warn": "流程题写过去时是高频时态错误——流程描述的是常态，不是某次发生的事。"
+        }
+      ]
+    },
+    {
+      "id": "t1-overview",
+      "task": "task1",
+      "title": "Task 1 · 概述句",
+      "sub": "全篇只有两句的预算，却决定一半的 Task Achievement",
+      "items": [
+        {
+          "frame": "Overall, [[X]] rose steadily while [[Y]] declined, and [[Z]] remained broadly stable.",
+          "zh": "一条主线、一条反向、一条持平，句式的三个位置各占一种走势，三条线以上的图最省字。",
+          "warn": "概述里出现具体数字，等于提前把细节段的活做完，细节段会变得无话可说。"
+        },
+        {
+          "frame": "Overall, the most striking change was the shift from [[A]] to [[B]].",
+          "zh": "图里有一个压倒性变化时，直接点出来，比罗列三条更果断。",
+          "warn": "只有两条线、且都在缓涨的图不要用 striking——最高级需要有事实支撑。"
+        },
+        {
+          "frame": "Overall, [[A]] and [[B]] moved in opposite directions, with the gap between them widening throughout [[the period]].",
+          "zh": "moved in opposite directions 一次交代两个方向，后面 with 结构补出差距变化，信息密度立刻上来。",
+          "warn": "不要写 both increased and decreased——同一主体不能同时做两件事。"
+        },
+        {
+          "frame": "Overall, [[X]] overtook [[Y]] in [[2010]] and held its lead to the end of the period.",
+          "zh": "有交叉点的图，概述就该写交叉，而不是各自涨了多少。",
+          "warn": "overtake 只用一次就够，细节段再写具体数字，不要在概述里把交叉点讲两遍。"
+        },
+        {
+          "frame": "Overall, the process consists of [[four]] main stages, beginning with [[collection]] and ending with [[packing]].",
+          "zh": "流程图标准概述：几个阶段 + 起点 + 终点，一句话收住整张图。",
+          "warn": "不要逐步骤复述；概述只报数量与首尾。"
+        },
+        {
+          "frame": "Overall, the area was transformed from [[a largely rural landscape]] into [[a residential and commercial district]].",
+          "zh": "地图题概述用 transformed from A into B，比 there are many changes 具体得多。",
+          "warn": "地图题别用 increase / decrease 描述建筑，要用 built / demolished / replaced / converted。"
+        }
+      ]
+    },
+    {
+      "id": "t1-start",
+      "task": "task1",
+      "title": "Task 1 · 起点与静态值",
+      "sub": "细节段第一句：先把排名和起点钉住",
+      "items": [
+        {
+          "frame": "In [[2000]], [[Museum B]] was the largest of the three, at [[600,000 visitors]], followed by [[Museum A]] at [[500,000]].",
+          "zh": "先给最高值，再用 followed by 带出第二，读者一次拿到排名和两个数字。",
+          "warn": "不要把三个数字平铺成三句 the number of X was…，那是列清单，不是比较。"
+        },
+        {
+          "frame": "[[Hotels]] accounted for [[40 per cent]] of the total, the largest single share.",
+          "zh": "饼图和占比题的核心动词是 account for，后面接比例。",
+          "warn": "account for 后面接比例或构成，接具体人数要用 make up；两者不能混。"
+        },
+        {
+          "frame": "[[Rented flats]] stood at [[just under a third]] of [[all households]].",
+          "zh": "精确值不确定时用 just under / just over / roughly，这是允许的模糊区间，不算含糊其辞。",
+          "warn": "图上写死的 40% 就写 40%，不要改成 about 40%——有准数反而模糊会被看作读不准。"
+        },
+        {
+          "frame": "[[Japan]] had by far the highest figure, at [[45,000 tonnes]].",
+          "zh": "by far 只在差距明显时使用，一用就必须跟最高级。",
+          "warn": "差距不大却写 by far，是 7 分卷最常被扣的表达失准。"
+        },
+        {
+          "frame": "Only a small minority — around [[one in ten]] — chose to [[rent rather than buy]].",
+          "zh": "把百分比换成 one in ten / a quarter / two thirds，句子比 10% / 25% 更有语感。",
+          "warn": "同一段里数字表达要统一，一会儿百分比一会儿分数，比较会变得读不下去。"
+        }
+      ]
+    },
+    {
+      "id": "t1-trend",
+      "task": "task1",
+      "title": "Task 1 · 趋势与幅度",
+      "sub": "别只会 increase 和 decrease",
+      "items": [
+        {
+          "frame": "[[Museum A]] climbed from [[500,000]] to [[800,000]] over [[the two decades]].",
+          "zh": "from A to B 是最省字的变化结构，配 climbed / fell / rose 使用。",
+          "warn": "climb from…to… 中间不要再插 by——from/to 和 by 是两套结构。"
+        },
+        {
+          "frame": "[[Enrolment]] rose sharply in [[the first decade]] before levelling off.",
+          "zh": "before + -ing 把两段走势压进一句，是 Task 1 里性价比最高的结构。",
+          "warn": "before levelling off 的主语必须还是同一个主体，换主语要另起一句。"
+        },
+        {
+          "frame": "[[Museum B]] peaked at [[900,000]] in [[2010]] before falling back to [[700,000]].",
+          "zh": "peak at 后面直接接峰值和时间，再用 before 补回落。",
+          "warn": "peak 是瞬间动词，不能写 was peaking at 然后持续十年。"
+        },
+        {
+          "frame": "[[The figure]] fluctuated between [[40]] and [[50 tonnes]] but ended the period close to where it began.",
+          "zh": "fluctuate 必须配 between / around，否则读者不知道波动范围。",
+          "warn": "只有两个时间点的图不能写 fluctuated——至少三个点才谈得上波动。"
+        },
+        {
+          "frame": "[[The number of overseas students]] more than doubled, from [[12,000]] to [[27,000]].",
+          "zh": "倍数动词（double / halve / treble）比 increased by 100% 自然得多。",
+          "warn": "double 后面直接接数字，不要写 doubled by。"
+        },
+        {
+          "frame": "[[Museum B]] grew at a much faster rate than [[Museum A]], widening the gap from [[100,000]] to [[250,000]].",
+          "zh": "把「速度差」和「差距变化」放进一句，这是 Task 1 拿高分的核心比较方式。",
+          "warn": "只说 both increased 而不说谁快，等于没有比较；比较分就丢在这里。"
+        },
+        {
+          "frame": "The figure for [[camping]] remained unchanged at [[20 per cent]] throughout the period.",
+          "zh": "完全不变的数据也必须写——不写就是漏掉主要特征。",
+          "warn": "remained unchanged 后面不要加 by，by 只用来表示变化量。"
+        }
+      ]
+    },
+    {
+      "id": "t1-compare",
+      "task": "task1",
+      "title": "Task 1 · 比较、交叉与排序",
+      "sub": "Task 1 的分数多半来自比较，而不是描述",
+      "items": [
+        {
+          "frame": "[[Museum B]] overtook [[Museum A]] in [[2010]], when the former reached [[900,000]] and the latter [[650,000]].",
+          "zh": "the former / the latter 避免重复两个名字，同时把交叉点的双方数字补齐。",
+          "warn": "the former / the latter 只能用于两者，三方比较请直接写名字。"
+        },
+        {
+          "frame": "The gap between [[the two museums]] narrowed from [[100,000]] to [[50,000]].",
+          "zh": "差距本身也是数据，narrowed / widened 能把两条线的关系说清楚。",
+          "warn": "差距缩小不等于数值下降，别顺手写成 both figures fell。"
+        },
+        {
+          "frame": "[[Spending on health]] was twice as high as [[spending on transport]] by [[the end of the period]].",
+          "zh": "倍数比较（twice / three times as high as）比 100% more than 清楚。",
+          "warn": "twice as high as 后面接的是比较对象，不是数字。"
+        },
+        {
+          "frame": "Although [[Museum B]] began the period well ahead of [[Museum A]], the two were almost level by [[2020]].",
+          "zh": "让步从句写「起点谁领先」，主句写「终点追平」，一句讲完一个完整故事。",
+          "warn": "although 和 but 不能同现，这是中国考生最高频的语法错。"
+        },
+        {
+          "frame": "[[Camping]], by contrast, was the only category that [[declined]].",
+          "zh": "by contrast 用于「其余都在涨，只有它跌」，是真正的对比，不是万能连接词。",
+          "warn": "by contrast 与 on the contrary 不同，后者用来反驳前一句，图里几乎用不到。"
+        }
+      ]
+    },
+    {
+      "id": "t1-group",
+      "task": "task1",
+      "title": "Task 1 · 合并同类项",
+      "sub": "六个数字不要写六句，要分组",
+      "items": [
+        {
+          "frame": "The [[three]] categories that grew all did so at a similar pace, gaining between [[8]] and [[11 points]].",
+          "zh": "同类项合并是 Coherence 的直接证据：先把相同的归在一起，再点差异。",
+          "warn": "合并后仍要给范围，否则读者不知道「相似」到什么程度。"
+        },
+        {
+          "frame": "While [[the older age groups]] shrank, [[the younger ones]] expanded.",
+          "zh": "while 引出对照，是段落内部最自然的切分方式。",
+          "warn": "while 后面要接完整从句；接名词短语会变成悬垂结构。"
+        },
+        {
+          "frame": "Only [[two]] of the [[six]] countries recorded a fall, and both were in [[Southern Europe]].",
+          "zh": "用数量词收束一组数据，比逐个报国名省一半字数。",
+          "warn": "说了 only two 就必须说清是哪两个，否则等于省略信息。"
+        },
+        {
+          "frame": "The remaining [[countries]] showed no clear pattern, moving by less than [[three points]] in either direction.",
+          "zh": "无法归类的数据要给一个诚实的处理方式，而不是硬编一个趋势。",
+          "warn": "没看清就说没看清；编造趋势比不写更糟。"
+        }
+      ]
+    },
+    {
+      "id": "t1-process",
+      "task": "task1",
+      "title": "Task 1 · 流程与步骤",
+      "sub": "顺序词 + 被动语态，一条链不要断",
+      "items": [
+        {
+          "frame": "The first stage involves [[collecting used cans from households]].",
+          "zh": "involves + -ing 是流程题第一句最稳的写法。",
+          "warn": "involves 后面必须是名词或动名词，不能接 to do。"
+        },
+        {
+          "frame": "Once [[the material has been sorted]], it is [[crushed into flat sheets]].",
+          "zh": "once + 现在完成时表示「前一步做完之后」，比 after 更强调先后完成。",
+          "warn": "once 从句用现在完成时、主句用一般现在时；两边都写过去时会把流程变成历史事件。"
+        },
+        {
+          "frame": "After being [[melted down]], [[the metal]] is poured into [[moulds]].",
+          "zh": "after being + 过去分词省掉一个从句，是流程图最常用的压缩结构。",
+          "warn": "after being 的主语必须和主句一致，否则会变成悬垂结构。"
+        },
+        {
+          "frame": "The final stage sees [[the finished sheets]] [[packaged and dispatched to retailers]].",
+          "zh": "see + 宾语 + 过去分词用来收尾，比 lastly 有分量。",
+          "warn": "see 这种用法只适合最后一两步，全文都用会显得刻意。"
+        }
+      ]
+    },
+    {
+      "id": "t1-map",
+      "task": "task1",
+      "title": "Task 1 · 地图与改造",
+      "sub": "写「被替换」，不写「有变化」",
+      "items": [
+        {
+          "frame": "The most extensive change was the replacement of [[the playing field]] with [[a car park]].",
+          "zh": "replacement of A with B 一次说清「谁没了、谁来了」。",
+          "warn": "change 后接 of；写成 the change from…into… 当主语时会缺动词。"
+        },
+        {
+          "frame": "A new [[housing estate]] was built on the site of [[the former factory]].",
+          "zh": "on the site of 是地图题的固定搭配，表示「原址新建」。",
+          "warn": "不要写 on the place of 或 in the position of，两者都不地道。"
+        },
+        {
+          "frame": "The [[harbour]] was extended to [[the north]], while [[the old warehouse]] was demolished.",
+          "zh": "while 把两处改动并列，避免一句一个改动地把段落写成清单。",
+          "warn": "别描述图上看不出的精度（如 5 metres east），会被判为错误信息。"
+        },
+        {
+          "frame": "Little changed in [[the south of the island]], apart from [[the widening of the access road]].",
+          "zh": "没变的区域也要交代，apart from 用来收住唯一的例外。",
+          "warn": "little changed 是「基本没变」；完全没变要用 nothing changed。"
+        }
+      ]
+    },
+    {
+      "id": "t2-open",
+      "task": "task2",
+      "title": "Task 2 · 引入背景",
+      "sub": "不要抄题目，先把话题放进现实语境",
+      "items": [
+        {
+          "frame": "It is often argued that [[longer school days raise attainment]], but the evidence is less clear-cut than it first appears.",
+          "zh": "先复述一种流行说法，再声明证据不足，为后面的立场留出空间。",
+          "warn": "that 后面必须是可以被争论的观点，不能是人人同意的事实。"
+        },
+        {
+          "frame": "Few issues divide opinion more sharply than [[the question of how much personal data companies should hold]].",
+          "zh": "话题本身争议性强时用这句开场，比 nowadays 有力得多。",
+          "warn": "争议性弱的话题（如「阅读有益」）用这句会显得夸张。"
+        },
+        {
+          "frame": "In many countries, [[remote work]] has become an everyday part of [[professional life]].",
+          "zh": "把话题落到具体社会现象上，避免空泛的 with the development of society。",
+          "warn": "with the development of society / economy 这类开头几乎等于没有开头。"
+        },
+        {
+          "frame": "The past decade has seen a marked shift in how [[young people consume news]].",
+          "zh": "时间段 + see + 名词化，是书面语里最省力的背景句。",
+          "warn": "see 的主语必须是时间段或地点，不能是人。"
+        }
+      ]
+    },
+    {
+      "id": "t2-stance",
+      "task": "task2",
+      "title": "Task 2 · 亮明立场",
+      "sub": "观点类没有明确立场，Task Response 最高 5 分",
+      "items": [
+        {
+          "frame": "This essay argues that [[public libraries remain essential]], largely because [[they guarantee equal access to information]].",
+          "zh": "立场加理由一次给全，读者立刻知道你站在哪边、为什么。",
+          "warn": "argue that 后面必须是完整命题，不能只塞一个名词短语。"
+        },
+        {
+          "frame": "I would argue that [[the benefits outweigh the drawbacks]], provided that [[strict age verification is enforced]].",
+          "zh": "利弊类给出「有条件支持」，比无条件 outweigh 可信得多。",
+          "warn": "provided that 后面必须是真的限制条件；写 provided that it is good 等于没写。"
+        },
+        {
+          "frame": "On balance, I believe [[the ban is justified]], though not without reservations about [[its effect on small businesses]].",
+          "zh": "on balance 表示权衡之后的结论；though not without 让步但不翻立场。",
+          "warn": "让步写到让读者以为你改主意了，就是立场不稳。"
+        },
+        {
+          "frame": "This is not to say that [[technology should be restricted]]; rather, [[its use in classrooms needs clearer rules]].",
+          "zh": "先否掉一个可能的误解，再说真正的观点，论证密度很高的一句。",
+          "warn": "rather 后面必须真的纠正前半句，不能只是换个说法重复。"
+        }
+      ]
+    },
+    {
+      "id": "t2-concede",
+      "task": "task2",
+      "title": "Task 2 · 让步与反驳",
+      "sub": "Coherence 的分水岭：你能不能公平地处理对方",
+      "items": [
+        {
+          "frame": "Admittedly, [[remote work]] has its costs; however, these are outweighed by [[the time saved on commuting]].",
+          "zh": "Admittedly + however 是最稳的先让后驳结构，一句完成一个完整回合。",
+          "warn": "however 后面要接真正的反驳，不能只是「但是也很重要」这种空话。"
+        },
+        {
+          "frame": "It could be objected that [[testing deters cheating]]. Yet this assumes [[students are motivated by grades alone]], which is rarely the case.",
+          "zh": "指出对方论证里隐含的假设，再攻击假设——比直接说对方错高一级。",
+          "warn": "要真的写出那个假设；停在 It could be objected that 之后不接理由等于没反驳。"
+        },
+        {
+          "frame": "While there is some truth in the claim that [[advertising informs consumers]], it overlooks [[the pressure it places on low-income families]].",
+          "zh": "承认部分正确再指出遗漏，是讨论类和利弊类最常用的句式。",
+          "warn": "overlook 后面要接具体被忽略的因素，不能接 it is wrong。"
+        },
+        {
+          "frame": "Even if [[longer hours were proven to raise scores]], it would not follow that [[schools should extend the day]].",
+          "zh": "虚拟语气 + not follow that，专门用来切断对方的推理链。",
+          "warn": "were / would 必须配套；写成 even if it is true, it would not follow 会语法不一致。"
+        }
+      ]
+    },
+    {
+      "id": "t2-cause",
+      "task": "task2",
+      "title": "Task 2 · 因果与机制",
+      "sub": "说清「怎么发生的」，分数就上去了",
+      "items": [
+        {
+          "frame": "[[Rising rents]] place considerable pressure on [[young families]], which in turn leads to [[longer commutes and lower savings]].",
+          "zh": "A 压 B、B 导致 C，一条三环因果链，比 because 更能展开。",
+          "warn": "which in turn 只指代紧挨着的那个名词，指代错就是逻辑错。"
+        },
+        {
+          "frame": "The root of the problem lies not in [[the technology itself]] but in [[how it is used at home]].",
+          "zh": "not in A but in B 把归因纠正过来，问题解决类特别适用。",
+          "warn": "not…but… 两边结构必须平行：左边介词，右边也要介词。"
+        },
+        {
+          "frame": "This creates a self-reinforcing cycle: the more [[time spent on screens]], the less [[sleep children get]].",
+          "zh": "the more…the less… 是描述恶性循环最紧凑的结构。",
+          "warn": "the more 后面不能有谓语重复；the more people use 少了宾语。"
+        },
+        {
+          "frame": "Unless [[regulators act soon]], [[the problem]] is likely to worsen.",
+          "zh": "unless 引出唯一能改变结果的条件，用来加强紧迫感。",
+          "warn": "unless 本身已含否定，后面不能再加 not。"
+        }
+      ]
+    },
+    {
+      "id": "t2-eg",
+      "task": "task2",
+      "title": "Task 2 · 举例与证据",
+      "sub": "例子要具体，数据不要编",
+      "items": [
+        {
+          "frame": "Take the case of [[city-centre schools]], where [[pupils often travel over an hour each way]].",
+          "zh": "Take the case of 是最不像模板的举例方式，后面接一个真实可想的场景。",
+          "warn": "编造具体统计（如「2019 年 73% 的学生」）属于伪造证据，考官看得出来，论证也不会因此更强。"
+        },
+        {
+          "frame": "A clear illustration of this is [[the shift to online banking]], which [[has closed hundreds of local branches]].",
+          "zh": "当例子本身就是论点的延伸时，用 illustration 比 for example 更贴切。",
+          "warn": "for example 不要连用三次；同段出现两次以上就换成 illustration / case / instance。"
+        },
+        {
+          "frame": "Evidence from [[several European cities]] suggests that [[congestion charges reduce traffic without harming trade]].",
+          "zh": "用 suggests 而不是 proves，是对证据强度的正确把握。",
+          "warn": "suggests 后面接完整从句，不能接名词短语。"
+        },
+        {
+          "frame": "The same pattern appears in [[rural areas]], where [[public transport has been cut even more sharply]].",
+          "zh": "第二个例子用 the same pattern 承接，比再来一个 for example 连贯得多。",
+          "warn": "两个例子必须真的同类；硬凑出来的「同样」会被判为论证不清。"
+        }
+      ]
+    },
+    {
+      "id": "t2-limit",
+      "task": "task2",
+      "title": "Task 2 · 限定与折中",
+      "sub": "绝对化的结论最好写；有条件的结论最可信",
+      "items": [
+        {
+          "frame": "This is likely to be true only where [[public transport is reliable enough to replace the car]].",
+          "zh": "给结论加地理或制度条件，避免 overgeneralisation。",
+          "warn": "限定条件要能检验；where the situation is different 等于没有限定。"
+        },
+        {
+          "frame": "The answer depends largely on [[the age of the child and the content being viewed]].",
+          "zh": "题目问得过于绝对时，这句话可以同时保住 discuss 的双方。",
+          "warn": "depends on 之后必须真的展开，只说 depends 会被看作回避问题。"
+        },
+        {
+          "frame": "A blanket ban would be a disproportionate response; [[targeted regulation of advertising]] is preferable.",
+          "zh": "一刀切 vs 精准监管，是政策类题目最出彩的一组对立。",
+          "warn": "用了 targeted regulation 就要在下一句说清怎么 targeted。"
+        },
+        {
+          "frame": "Rather than [[building new roads]], governments should [[invest in bus networks]].",
+          "zh": "rather than 放在句首直接给替代方案，比单纯否定有建设性。",
+          "warn": "rather than 两边结构要一致：rather than build…, … should invest…（都用动词原形）。"
+        }
+      ]
+    },
+    {
+      "id": "t2-link",
+      "task": "task2",
+      "title": "Task 2 · 段落过渡",
+      "sub": "段间衔接靠逻辑，不靠 Firstly / Secondly",
+      "items": [
+        {
+          "frame": "Beyond the practical argument, there is also a question of principle: [[who owns personal data]].",
+          "zh": "从实用层面转到原则层面，是一段自然的推进，不是换话题。",
+          "warn": "过渡句必须承接上一段的结论；凡是能放进任何文章的过渡句都是模板。"
+        },
+        {
+          "frame": "This problem, however, is not beyond remedy: [[restaurant groups could sell two sizes at two prices]].",
+          "zh": "在问题段与方案段之间搭桥，让文章从「是什么」走到「怎么办」。",
+          "warn": "说了 not beyond remedy 就必须马上给方案，否则是空头承诺。"
+        },
+        {
+          "frame": "The more pressing question is not whether [[to regulate]], but [[who should do it]].",
+          "zh": "把讨论推进到更深一层，比 another reason is 有方向感。",
+          "warn": "只有前面确实讨论过一个次要问题时，才能说 more pressing。"
+        },
+        {
+          "frame": "It is at this point that [[the role of schools]] becomes relevant.",
+          "zh": "把前面铺的两个概念接起来，适合四段式里第三段开头。",
+          "warn": "这是强调句；去掉 It is…that 之后句子必须仍然完整。"
+        }
+      ]
+    },
+    {
+      "id": "t2-end",
+      "task": "task2",
+      "title": "Task 2 · 收尾",
+      "sub": "只重述立场，不加新论点",
+      "items": [
+        {
+          "frame": "In conclusion, [[restricting advertising to children]] is, on balance, [[justified]].",
+          "zh": "结论段第一句就重述立场，后面只做总结，不开新战场。",
+          "warn": "结论段出现新理由就是新论点，会被算作结构问题。"
+        },
+        {
+          "frame": "What is needed is not [[fewer screens]] but [[clearer rules about when they are used]].",
+          "zh": "把结论压成一句对照，比重复正文更有决断力。",
+          "warn": "not…but… 是强断言；正文没论证到就别用。"
+        },
+        {
+          "frame": "If [[youth unemployment]] is to be addressed, [[vocational training]] must come first.",
+          "zh": "条件句收尾，把建议落到优先级上。",
+          "warn": "be to 结构表「要实现」；写成 if X will be addressed 就不对了。"
+        },
+        {
+          "frame": "Ultimately, the question is less about whether [[to use artificial intelligence]] than about how [[to keep it accountable]].",
+          "zh": "把讨论从「要不要」抬到「怎么做」，两问类最好的收束。",
+          "warn": "less about…than about… 两边要同类成分；一边从句一边名词会失衡。"
+        }
+      ]
+    }
+  ]
+}

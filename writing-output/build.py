@@ -540,7 +540,7 @@ def render_case(case: dict, index: int) -> str:
     return "".join(out)
 
 
-def render_toc(meta: dict, task1: list, task2: list) -> str:
+def render_toc(meta: dict, task1: list, task2: list, patterns: dict | None = None) -> str:
     out = ['<nav class="toc" aria-label="目录">', '<p class="toc-title">目录</p>']
     out.append('<div class="toc-group"><div class="toc-head"><b>Task 1 小作文</b><span>学术类</span></div>')
     for i, case in enumerate(task1, 1):
@@ -557,6 +557,8 @@ def render_toc(meta: dict, task1: list, task2: list) -> str:
         )
     out.append("</div>")
     out.append('<div class="toc-group"><div class="toc-head"><b>附录</b><span>数据</span></div>')
+    if patterns:
+        out.append('<a href="#patterns" data-cat="patterns"><span class="n">—</span><span>句式工具箱</span></a>')
     out.append('<a href="#appendix" data-cat="appendix"><span class="n">—</span><span>高频话题与数据说明</span></a>')
     out.append("</div>")
     out.append(f'<div class="toc-foot">{esc(meta.get("tocFoot", ""))}</div>')
@@ -652,6 +654,96 @@ def rendered(text: str) -> str:
     return inline(text)
 
 
+def validate_patterns(patterns: dict, issues: Issues) -> None:
+    if not patterns:
+        return
+    groups = patterns.get("groups") or []
+    if not groups:
+        issues.err("patterns", "groups 为空")
+    seen_ids: set[str] = set()
+    slot_re = re.compile(r"\[\[(.+?)\]\]")
+    total = 0
+    for gi, group in enumerate(groups):
+        where = f"patterns[{group.get('id') or gi}]"
+        for key in ("id", "task", "title"):
+            if not group.get(key):
+                issues.err(where, f"缺少字段 {key}")
+        if group.get("task") not in ("task1", "task2"):
+            issues.err(where, f"task 只能是 task1 / task2，当前 {group.get('task')!r}")
+        if group.get("id") in seen_ids:
+            issues.err(where, f"group id 重复: {group.get('id')}")
+        seen_ids.add(group.get("id") or "")
+        items = group.get("items") or []
+        if not items:
+            issues.err(where, "items 为空")
+        for ii, item in enumerate(items):
+            iw = f"{where}.items[{ii}]"
+            total += 1
+            frame = item.get("frame") or ""
+            if not frame:
+                issues.err(iw, "缺少 frame")
+                continue
+            if not slot_re.search(frame):
+                issues.warn(iw, "frame 里没有 [[ ]] 可替换位，可能是背死的整句")
+            if "[[" in frame.replace("[[", "", 1).replace("]]", "") and frame.count("[[") != frame.count("]]"):
+                issues.err(iw, "frame 里的 [[ ]] 不配对")
+            if not (item.get("zh") or "").strip():
+                issues.err(iw, "缺少 zh 说明")
+            if len(frame) > 220:
+                issues.warn(iw, f"frame 长度 {len(frame)}，超过 220 字，可能不是一句能直接用的框架")
+    if total < 20:
+        issues.warn("patterns", f"只有 {total} 条句式，偏少")
+
+
+def render_patterns(patterns: dict) -> str:
+    if not patterns:
+        return ""
+    SLOT_RE = re.compile(r"\[\[(.+?)\]\]")
+
+    def frame_html(frame: str) -> str:
+        out: list[str] = []
+        pos = 0
+        for m in SLOT_RE.finditer(frame):
+            out.append(esc(frame[pos:m.start()]))
+            out.append(f'<i class="slot">{esc(m.group(1))}</i>')
+            pos = m.end()
+        out.append(esc(frame[pos:]))
+        return "".join(out)
+
+    groups = []
+    for group in patterns.get("groups", []):
+        items = []
+        for item in group.get("items", []):
+            frame = item.get("frame", "")
+            items.append(
+                '<li class="pat">'
+                f'<p class="pf-en">{frame_html(frame)}</p>'
+                + (f'<p class="pat-why">{inline(item["zh"])}</p>' if item.get("zh") else "")
+                + (f'<p class="pat-warn">{inline(item["warn"])}</p>' if item.get("warn") else "")
+                + "</li>"
+            )
+        groups.append(
+            f'<section class="pat-group" id="pat-{esc(group["id"])}" data-task="{esc(group.get("task", ""))}">'
+            f'<div class="pat-head"><h3>{esc(group["title"])}'
+            + (f'<span>{esc(group.get("sub", ""))}</span>' if group.get("sub") else "")
+            + f'</h3><em>{len(items)} 条</em></div>'
+            f'<ul class="pat-list">{"".join(items)}</ul>'
+            "</section>"
+        )
+
+    total = sum(len(g.get("items", [])) for g in patterns.get("groups", []))
+
+    return (
+        '<section class="patterns" id="patterns"><div class="card">'
+        f'<p class="hero-kicker">{esc(patterns.get("kicker", "Sentence bank"))}</p>'
+        f'<h2>{inline(patterns.get("headline", "句式工具箱"))}</h2>'
+        f'<p class="pat-lead">{inline(patterns.get("lead", ""))}</p>'
+        f'<p class="pat-note">{total} 条。带底线的部分换成你自己的内容，其余词原样保留。</p>'
+        + f'<div class="pat-groups">{"".join(groups)}</div>'
+        "</div></section>"
+    )
+
+
 def render_appendix(meta: dict, stats: dict) -> str:
     blocks = []
     for group in meta.get("hotTopics", []):
@@ -700,10 +792,11 @@ def main(argv: list[str] | None = None) -> int:
 
     meta = load("meta.json")
     stats = load("stats.json")
+    patterns = load("patterns.json") if (CONTENT / "patterns.json").exists() else {}
     t1: list[dict] = []
     t2: list[dict] = []
     for path in sorted(CONTENT.glob("*.json")):
-        if path.name in {"meta.json", "stats.json"}:
+        if path.name in {"meta.json", "stats.json", "patterns.json"}:
             continue
         payload = json.loads(path.read_text(encoding="utf-8"))
         cases = payload["cases"] if isinstance(payload, dict) else payload
@@ -734,6 +827,8 @@ def main(argv: list[str] | None = None) -> int:
         for case in group:
             case["catNote"] = notes.get(case["cat"], "")
 
+    validate_patterns(patterns, issues)
+
     if issues.errors:
         for e in issues.errors:
             print("ERROR " + e, file=sys.stderr)
@@ -743,17 +838,20 @@ def main(argv: list[str] | None = None) -> int:
         print(f"\n{len(issues.errors)} 个错误，未生成 HTML。", file=sys.stderr)
         return 1
     if args.check:
-        print(f"OK · {len(t1)} 篇 Task 1 + {len(t2)} 篇 Task 2，{len(issues.warns)} 条提醒")
+        print(f"OK · {len(t1)} 篇 Task 1 + {len(t2)} 篇 Task 2，"
+              f"{sum(len(g.get('items', [])) for g in patterns.get('groups', []))} 条句式，"
+              f"{len(issues.warns)} 条提醒")
         return 0
 
     template = TEMPLATE.read_text(encoding="utf-8")
     body = (
         render_hero(meta, stats, t1, t2)
         + '<div class="shell">'
-        + render_toc(meta, t1, t2)
+        + render_toc(meta, t1, t2, patterns)
         + '<main class="content">'
         + render_task_block("task1", meta.get("task1Intro", ""), t1)
         + render_task_block("task2", meta.get("task2Intro", ""), t2)
+        + render_patterns(patterns)
         + render_appendix(meta, stats)
         + '<div class="empty" id="emptyState" hidden>这个筛选下暂时没有内容。</div>'
         + "</main></div>"

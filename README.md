@@ -15,11 +15,12 @@
 
 ## 先看效果
 
-在线示例（GitHub Pages，`main` 分支更新后自动部署三页）：
+在线示例（GitHub Pages，`main` 分支更新后自动部署）：
 
 ```text
 落地页       https://megalomanian.github.io/ielts-reading-html/
 写作范文库   https://megalomanian.github.io/ielts-reading-html/writing/
+口语素材库   https://megalomanian.github.io/ielts-reading-html/speaking/
 阅读示例     https://megalomanian.github.io/ielts-reading-html/reading/
 ```
 

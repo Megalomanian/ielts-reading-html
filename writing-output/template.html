@@ -348,8 +348,29 @@ mark.locate-hit{
 .fold-btn::after{content:"＋";color:var(--accent);font-weight:800;letter-spacing:0}
 .fold-btn[aria-expanded="true"]::after{content:"－"}
 
+/* ---------- pattern bank ---------- */
+.patterns{margin-top:34px;scroll-margin-top:calc(var(--topbar-h) + 16px)}
+.patterns .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:22px 24px 24px}
+.patterns h2{margin:7px 0 10px;font-family:var(--serif);font-weight:700;font-size:clamp(20px,1.7vw,25px);line-height:1.25;color:#18232c}
+.pat-lead{margin:0 0 14px;font-size:13px;line-height:1.78;color:var(--ink-2);max-width:80ch}
+.pat-lead strong{color:var(--accent-2);font-weight:750}
+.pat-note{margin:0 0 14px;font-size:11.5px;line-height:1.6;color:var(--muted)}
+.pat-groups{display:grid;gap:16px;margin-top:14px}
+.pat-head{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.pat-head h3{margin:0;font-size:14px;font-weight:800;color:var(--accent-2);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pat-head h3 span{font-family:var(--sans);font-size:11px;font-weight:550;color:var(--muted)}
+.pat-head em{margin-left:auto;font-style:normal;font-size:10.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.pat-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.pat{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--paper-2);padding:11px 13px}
+.pf-en{margin:0;font-family:var(--serif);font-size:13.4px;line-height:1.68;color:#1e2a33}
+.slot{font-style:normal;font-weight:700;color:var(--accent-2);background:var(--accent-pale);border-bottom:1px dashed var(--accent);border-radius:2px;padding:0 3px}
+.pat-why{margin:5px 0 0;font-size:12px;line-height:1.7;color:#2a3740}
+.pat-why strong,.pat-warn strong{font-weight:750}
+.pat-warn{margin:6px 0 0;padding:5px 9px;border-left:2px solid #e7c07a;border-radius:0 5px 5px 0;background:rgba(255,251,235,.8);font-size:11.6px;line-height:1.68;color:#8a5a20}
+.pat-warn::before{content:"别这么写";display:inline-block;margin-right:6px;padding:0 5px;border-radius:3px;background:#f3d59b;color:#6d420c;font-size:9.5px;font-weight:800;letter-spacing:.04em;vertical-align:1px}
+
 /* ---------- appendix ---------- */
-.appendix{margin-top:34px}
+.appendix{margin-top:34px;scroll-margin-top:calc(var(--topbar-h) + 16px)}
 .appendix .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:22px 24px 24px}
 .appendix h2{margin:0 0 4px;font-size:19px;font-weight:800;letter-spacing:-.01em}
 .appendix .sub{margin:0 0 16px;font-size:12.5px;color:var(--muted)}
@@ -433,6 +454,8 @@ mark.locate-hit{
   .appendix .card{padding:16px 15px 18px}
   .site-footer{padding:0 12px 34px}
   .filterbar{padding:10px 15px}
+  .patterns .card{padding:16px 15px 18px}
+  .pf-en{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -465,6 +488,9 @@ mark.locate-hit{
   .essay-head,.essay-tools{break-inside:avoid}
   .appendix{padding-top:6px}
   .appendix .card{box-shadow:none;border:0;padding:0}
+  .patterns{margin-top:16px}
+  .patterns .card{box-shadow:none;border:0;padding:0}
+  .pat{break-inside:avoid}
 }
 </style>
 </head>
@@ -553,8 +579,7 @@ mark.locate-hit{
     }
   }
 
-  function locate(btn){
-    clearHits();
+  function locate(btn){    clearHits();
     var act = document.querySelectorAll(".kw.is-active");
     for(var a=0;a<act.length;a++) act[a].classList.remove("is-active");
     btn.classList.add("is-active");
@@ -717,9 +742,28 @@ mark.locate-hit{
     });
   }
 
+  /* ---------- in-page anchors (TOC, appendix links) ---------- */
+  // CSS smooth scrolling is silently ignored by some embedded browsers, which would leave the
+  // reader stuck at the top after clicking a TOC link. Drive these jumps ourselves, and align the
+  // top of the target rather than centring it: sections here are far taller than the viewport, and
+  // centring one would put its heading off-screen.
+  function jumpTo(target){
+    target.scrollIntoView({behavior: "instant", block: "start", inline: "nearest"});
+  }
+  var anchors = document.querySelectorAll('a[href^="#"]');
+  for(var an=0;an<anchors.length;an++){
+    anchors[an].addEventListener("click", function(ev){
+      var id = this.getAttribute("href").slice(1);
+      var target = id ? document.getElementById(id) : null;
+      if(!target) return;
+      ev.preventDefault();
+      jumpTo(target);
+      if(history.replaceState) history.replaceState(null, "", "#" + id);
+    });
+  }
+
   /* ---------- scrollspy ---------- */
-  var spyLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[data-cat]"));
-  if("IntersectionObserver" in window && spyLinks.length){
+  var spyLinks = Array.prototype.slice.call(document.querySelectorAll(".toc a[data-cat]"));  if("IntersectionObserver" in window && spyLinks.length){
     var map = {};
     spyLinks.forEach(function(a){ map[a.getAttribute("href").slice(1)] = a; });
     var io = new IntersectionObserver(function(entries){
@@ -731,7 +775,7 @@ mark.locate-hit{
         link.classList.add("is-current");
       });
     }, {rootMargin: "-18% 0px -68% 0px", threshold: 0});
-    document.querySelectorAll(".case, .appendix, .hero").forEach(function(el){
+    document.querySelectorAll(".case, .appendix, .patterns, .hero").forEach(function(el){
       if(el.id) io.observe(el);
     });
   }

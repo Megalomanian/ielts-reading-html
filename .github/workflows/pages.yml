@@ -6,6 +6,7 @@ on:
     paths:
       - ".opencode/skills/ielts-reading-html/**"
       - "writing-output/**"
+      - "speaking-output/**"
       - "docs/pages-index.html"
       - "README.md"
       - ".github/workflows/pages.yml"
@@ -32,6 +33,7 @@ jobs:
           missing=0
           for f in \
             "writing-output/index.html" \
+            "speaking-output/speaking-part2-materials.html" \
             ".opencode/skills/ielts-reading-html/examples/demo.html" \
             ".opencode/skills/ielts-reading-html/examples/demo-case.json" \
             "docs/pages-index.html"; do
@@ -46,8 +48,10 @@ jobs:
 
       - name: Prepare static site
         run: |
-          mkdir -p site/writing site/reading
+          mkdir -p site/writing site/reading site/speaking
           cp writing-output/index.html site/writing/index.html
+          cp speaking-output/speaking-part2-materials.html site/speaking/index.html
+          cp speaking-output/speaking-part2-materials.pdf site/speaking/materials.pdf
           cp .opencode/skills/ielts-reading-html/examples/demo.html site/reading/index.html
           cp .opencode/skills/ielts-reading-html/examples/demo-case.json site/reading/demo-case.json
           cp docs/pages-index.html site/index.html

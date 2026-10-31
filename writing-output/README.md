@@ -14,6 +14,7 @@ writing-output/index.html
 - 点右栏解析里的绿色关键词 → 左栏范文精确高亮对应那半句
 - 顶部「隐藏段意」关掉逐段中文注解，只看纯英文范文
 - 每篇「复制范文」可直接贴进写作软件
+- 末尾「句式工具箱」：72 条按功能分组的可替换句式骨架（开头 / 概述 / 趋势 / 比较 / 让步 / 收尾），每条附一句「别这么写」，可一键复制框架
 
 ## 内容构成
 
@@ -36,6 +37,7 @@ writing-output/
 ├── SPEC.md               # 内容 JSON 的字段规格
 ├── content/
 │   ├── meta.json         # 标题、导读、筛选、附录文案
+│   ├── patterns.json     # 句式工具箱（72 条可替换框架）
 │   ├── stats.json        # 抓取统计（脚本生成）
 │   ├── task1-*.json      # 8 个 Task 1 case
 │   └── task2-*.json      # 5 个 Task 2 case
@@ -56,6 +58,8 @@ python -X utf8 writing-output\build.py
 ```
 
 校验不通过会直接列出错误并且**不生成 HTML**，不会产出坏链接。字段说明见 `SPEC.md`。
+
+句式工具箱在 `content/patterns.json`，用 `[[ ]]` 标出可替换位（构建时会渲染成底线下划）。校验规则：每个 group 必须有 `id` / `task` / `title`，每条必须有 `frame` 与 `zh`；`[[ ]]` 必须配对，没有可替换位会提示「可能是背死的整句」。
 
 ## 刷新考场回忆数据
 
