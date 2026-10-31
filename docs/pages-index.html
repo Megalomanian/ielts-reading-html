@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="IELTS 学习工具：离线可用、单文件、可打印的写作范文库与阅读互动解析。">
+<meta name="color-scheme" content="light">
+<meta name="generator" content="ielts-reading-html">
+<title>IELTS 学习工具 · 写作范文库与阅读互动解析</title>
+<style>
+:root{
+  --bg:#f2efe7;
+  --paper:#fffdf8;
+  --paper-2:#faf7ef;
+  --ink:#1f2933;
+  --ink-2:#48545f;
+  --muted:#5b6672;
+  --line:#e3dccf;
+  --line-strong:#cfc5b4;
+  --accent:#0f766e;
+  --accent-2:#115e59;
+  --accent-pale:#f0fdfa;
+  --shadow-sm:0 2px 8px rgba(44,52,58,.05);
+  --shadow:0 10px 32px rgba(44,52,58,.08);
+  --radius:16px;
+  --radius-sm:10px;
+  --sans:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --serif:Georgia,"Times New Roman","Songti SC",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  padding:clamp(24px,6vw,72px) clamp(16px,5vw,40px);
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.7;
+}
+.wrap{max-width:840px;margin:0 auto}
+
+header{margin-bottom:clamp(24px,4vw,40px)}
+h1{
+  margin:0 0 12px;
+  font-family:var(--serif);
+  font-size:clamp(27px,5.2vw,38px);
+  font-weight:400;
+  letter-spacing:.01em;
+  line-height:1.25;
+}
+.lede{
+  margin:0;
+  max-width:60ch;
+  color:var(--ink-2);
+  font-size:15px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:clamp(14px,2.4vw,20px);
+  margin:0 0 clamp(22px,3.5vw,32px);
+  padding:0;
+  list-style:none;
+}
+.card{
+  display:flex;
+  flex-direction:column;
+  padding:clamp(20px,3vw,26px);
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);
+}
+.card h2{
+  margin:0 0 4px;
+  font-family:var(--serif);
+  font-size:19px;
+  font-weight:400;
+  line-height:1.4;
+}
+.tag{
+  margin:0 0 14px;
+  color:var(--accent-2);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.card ul{
+  margin:0 0 22px;
+  padding:0;
+  list-style:none;
+  color:var(--ink-2);
+  font-size:14px;
+}
+.card li{
+  position:relative;
+  padding-left:14px;
+  margin-bottom:6px;
+}
+.card li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.68em;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--accent);
+  opacity:.55;
+}
+.card .spacer{flex:1 1 auto;min-height:4px}
+.btn{
+  display:inline-block;
+  align-self:flex-start;
+  padding:10px 20px;
+  border:1px solid var(--accent);
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  transition:background .15s ease,border-color .15s ease;
+}
+.btn:hover,.btn:focus-visible{
+  background:var(--accent-2);
+  border-color:var(--accent-2);
+}
+.btn:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
+
+footer{
+  padding-top:18px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:12.5px;
+  line-height:1.8;
+}
+footer p{margin:0 0 4px}
+footer p:last-child{margin-bottom:0}
+
+@media (max-width:520px){
+  body{font-size:14.5px}
+  .cards{grid-template-columns:1fr}
+  .btn{align-self:stretch;text-align:center}
+}
+
+@media print{
+  body{padding:0;background:#fff;color:#000;font-size:11pt}
+  header{margin-bottom:16pt}
+  .cards{display:block;margin-bottom:14pt}
+  .card{
+    margin-bottom:10pt;
+    padding:0 0 10pt;
+    border:0;
+    border-bottom:1px solid #ccc;
+    border-radius:0;
+    box-shadow:none;
+    page-break-inside:avoid;
+  }
+  .btn{display:none}
+  footer{border-top:1px solid #ccc;color:#333;font-size:9pt}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>IELTS 学习工具</h1>
+    <p class="lede">两个离线可用、单文件、可打印的雅思学习页面：写作范文库与阅读互动解析，全部 CSS、脚本与数据内联，下载后双击即可打开。</p>
+  </header>
+
+  <ul class="cards">
+
+    <li class="card">
+      <h2>IELTS Writing 范文库</h2>
+      <p class="tag">Task 1 × Task 2</p>
+      <ul>
+        <li>13 类写作题型：Task 1 八种图表、Task 2 五种提问方式</li>
+        <li>真实考场题目，原创 7.5 分范文</li>
+        <li>逐段解析：任务回应、结构与逻辑、词汇与语法、可迁移句式</li>
+        <li>点击解析关键词，定位范文原句并精确高亮</li>
+      </ul>
+      <div class="spacer"></div>
+      <a class="btn" href="./writing/">打开范文库</a>
+    </li>
+
+    <li class="card">
+      <h2>IELTS Reading 互动解析</h2>
+      <p class="tag">阅读试卷 · 单文件 HTML</p>
+      <ul>
+        <li>试卷照片转单文件 HTML，逐字还原文章与题目</li>
+        <li>每题中文解析，默认展开，附「原文回顾」证据句</li>
+        <li>点击解析关键词，跳回原文并精确高亮证据句</li>
+        <li>支持打印与导出 PDF</li>
+      </ul>
+      <div class="spacer"></div>
+      <a class="btn" href="./reading/">打开阅读示例</a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>写作题库来自 IELTS Buddy 公开考场回忆接口，共 3,743 条记录；范文与解析为原创教学示例，非官方标准答案。</p>
+    <p>页面可离线使用，Ctrl/Cmd + P 可导出 PDF。</p>
+  </footer>
+
+</div>
+</body>
+</html>

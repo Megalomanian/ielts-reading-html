@@ -1,0 +1,4 @@
+interface:
+  display_name: "IELTS 口语素材接口"
+  short_description: "读取和维护当前账号的口语素材"
+  default_prompt: "使用 $ielts-speaking-coach 读取我的 IELTS Buddy 口语素材。"

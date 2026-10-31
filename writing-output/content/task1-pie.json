@@ -1,0 +1,110 @@
+{
+  "cases": [
+    {
+      "id": "t1-pie",
+      "task": "task1",
+      "cat": "pie",
+      "catLabel": "饼图",
+      "catEn": "Pie chart",
+      "catNote": "饼图最容易死在「逐张图把每个扇区报一遍」——三张图的意义在于同一条扇区在三年的移动，不在每张图内部",
+      "order": 3,
+      "title": "度假者住宿方式的三个年份",
+      "titleEn": "Accommodation chosen by holidaymakers in 1988, 1998 and 2008",
+      "promptEn": "The pie charts below show the accommodation chosen by holidaymakers in 1988, 1998 and 2008.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "下图显示 1988、1998、2008 年度假者选择的住宿方式。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>三张饼是同一个整体的三次快照，百分比加总都是 100。所以一间酒店少掉的 18 个点，必然变成别人的增长——把「谁让出来、谁接过去」写清楚，比报四遍数字有用得多。",
+      "chart": {
+        "kind": "pie",
+        "caption": "Accommodation chosen by holidaymakers, 1988–2008",
+        "unit": "%",
+        "panels": [
+          { "title": "1988", "slices": [ { "label": "Hotel", "value": 48 }, { "label": "Camping", "value": 16 }, { "label": "Staying with friends", "value": 22 }, { "label": "Rented flat", "value": 14 } ] },
+          { "title": "1998", "slices": [ { "label": "Hotel", "value": 40 }, { "label": "Camping", "value": 22 }, { "label": "Staying with friends", "value": 23 }, { "label": "Rented flat", "value": 15 } ] },
+          { "title": "2008", "slices": [ { "label": "Hotel", "value": 30 }, { "label": "Camping", "value": 26 }, { "label": "Staying with friends", "value": 24 }, { "label": "Rented flat", "value": 20 } ] }
+        ],
+        "legend": ["Hotel", "Camping", "Staying with friends", "Rented flat"],
+        "note": "数据按考场回忆复原为示意数据，用于练结构，不保证与原卷一致。"
+      },
+      "tags": ["三个饼", "份额转移", "首尾对比"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-18", "venue": "杭州电子科技大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "The pie charts show the accommodation that holidaymakers chose in 1988, 1998 and 2008, divided into four types: hotels, camping, staying with friends and rented flats.",
+          "gist": "开头：改写题目。三个年份并列举完，再用 divided into 把四种住宿方式挂上去。"
+        },
+        {
+          "text": "Overall, the share taken by hotels fell in each of the three years, while camping and rented flats became steadily more common. Staying with friends was the one option that hardly moved, and hotels remained the largest single choice even in 2008.",
+          "gist": "概述：一句话给三条轨迹（持续跌 / 持续涨 / 基本不动），再补一句「跌了还是第一」，防止读者误以为酒店出局。"
+        },
+        {
+          "text": "In 1988, hotels accounted for 48% of holidaymakers, more than double the share of any other option. Ten years later that figure had dropped to 40%, and by 2008 it stood at 30%. The decline of eighteen percentage points was the largest single change across the three charts, yet hotels still housed almost one holidaymaker in three.",
+          "gist": "细节段一：只追酒店一条线，三个年份连读，中间用 1988 年的「超过其余三项之和」给起点一个分量。"
+        },
+        {
+          "text": "The growth was spread across the cheaper options rather than concentrated in one. Camping rose from 16% to 26% between 1988 and 2008, an increase of ten points, and rented flats did much the same, from 14% to 20%, with most of that gain arriving after 1998. Staying with friends, by contrast, hardly changed, moving only from 22% to 24% over the two decades.",
+          "gist": "细节段二：把剩下三项放在一起，用「涨幅分散」这个判断串起来，并用首尾年份直接对比。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "三张饼、四种住宿方式全部覆盖，但真正的分数来自两处判断：一是把 {{the share taken by hotels}} 当成一条跨年份的线来读，而不是每年报一个数；二是结尾的 {{hardly changed}} 承认有一项几乎没动——很多考生为了让文章「有变化」，会把 22%→24% 硬说成 rose slightly，反而暴露没读准。首尾年份的 {{an increase of ten points}} 也做了直接对比，符合题目的 make comparisons 要求。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "分段按「主体」切而非按「年份」切：一段专写酒店，一段写其余三项。若按年份分三段（1988 一段、1998 一段、2008 一段），每段都要重复四个数字，读者读完仍不知道趋势，这是饼图最常见的 6 分结构。段内的连接也承担信息：Ten years later、by 2008、with most of that gain arriving after 1998 把时间点串成线，by contrast 则把「几乎不动」从「增长」里明确摘出来。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "动词按主体分工：酒店用 accounted for / dropped / {{stood at 30%}}，营地用 rose，租屋用 did much the same 避免第二个 rose。{{more than double the share of any other option}} 是饼图独有的比较方式——它同时把「第一名的分量」和「其余各项都远低于它」写进一句话，柱状图里很难这么比。{{spread across the cheaper options}} 把「三项都在涨」压缩成一个判断，比分别说 three options increased 有解释力。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "时间跨度用不同时态分层：In 1988 hotels accounted for（一般过去）→ Ten years later that figure had dropped（过去完成）→ by 2008 it stood at（一般过去 + by 时间点）。这不是炫技，而是三张饼必须解决的先后问题。{{an increase of ten points}} 是名词化同位语，把 16%→26% 的差值单独拎出来，比 and it increased by ten points 少一个分句。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。三个年份用 in 1988, 1998 and 2008 一次列完，避免写成 in 1988, in 1998 and in 2008 的啰嗦版本。" },
+        { "n": "第 2 句", "d": "Overview 前半：酒店跌、营地与租屋涨。三张图放在一句里说，等于先告诉读者「这是一条趋势，不是三张快照」。" },
+        { "n": "第 3 句", "d": "Overview 后半：补「朋友家几乎没动」和「酒店仍是第一」两个限定。少任何一个，概述都会失真——一个漏掉静止项，一个让读者以为酒店消失了。" },
+        { "n": "第 4 句", "d": "细节段一起点：48% 本身不稀奇，{{more than double the share of any other option}} 才让这个数字有分量，也为后文「让出份额」埋伏笔。" },
+        { "n": "第 5 句", "d": "40% → 30% 两个点连写，用 had dropped / stood at 区分「已经跌到」和「停在」，时态本身在交代时间。" },
+        { "n": "第 6 句", "d": "把 18 个点定性为「三张图里最大的单一变化」，这是只有横向比三张饼才拿得到的句子；后半句 yet 一转，防止结论被读成「酒店不再重要」。" },
+        { "n": "第 7–9 句", "d": "细节段二先给判断（涨幅分散），再给营地、租屋两条证据，最后用 by contrast 把「几乎不动」的朋友家单独收尾。顺序是「判断—证据—反例」，不是「A 多少、B 多少、C 多少」。" }
+      ],
+      "lexis": [
+        { "w": "the share taken by", "m": "……所占的份额", "note": "饼图写「某类占比」时，比 the percentage of 更能强调此消彼长" },
+        { "w": "more than double the share of any other option", "m": "超过其余任何一项的两倍", "note": "饼图里给「第一名」定位时用它，一句同时交代领先幅度和对比对象" },
+        { "w": "stood at", "m": "停留在（某数值）", "note": "适合描述变化后的落点，区别于 rose to 的动态感" },
+        { "w": "was spread across", "m": "分散在……上", "note": "多个对象同时小幅增长时，用它可以一句话概括，免去三次 increase" },
+        { "w": "hardly changed", "m": "几乎没有变化", "note": "22%→24% 这种幅度必须承认「没怎么动」，硬说 rose 会被判数据误读" },
+        { "w": "did much the same", "m": "情况大致相同", "note": "替代第二个 rose from ... to ...，避免句式复读" }
+      ],
+      "grammar": [
+        "过去完成时交代中间点：<code>Ten years later that figure had dropped to 40%</code> —— 叙述已经推进到 1998 时，回看 1988 之后发生的变化，用 had dropped 比 dropped 更准。",
+        "名词化同位语：<code>an increase of ten points</code> —— 把差值当名词放在句尾补充，省掉 and it increased by ... 的第二个分句。",
+        "with 引导的伴随状语：<code>with most of that gain arriving after 1998</code> —— 在主句之外补一个时间分布，不必另起一句写 Most of the gain arrived after 1998。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>饼图的「总和不变量」本身就是一条论据</strong>。三张饼都是 100%，所以酒店让出的 18 个点必然出现在别处；会写的考生用 {{spread across the cheaper options}} 把「谁接过去了」说出来，不会写的考生只是并列四条「X 涨了、Y 跌了」，读者得自己做减法。另一个细节是最后那句 hardly changed：多数范文不敢写「没变」，因为觉得没内容可写，但恰恰是这一句证明作者在按数据说话，而不是按「每段都要有变化」的模板凑字。",
+      "pitfalls": [
+        "按年份分三段，每段把四个扇区报一遍：三张饼读完只得到十二个数字，没有任何比较，Task Achievement 很难过 6.5。",
+        "把 22%→24% 写成 rose significantly：2 个点在饼图里属于波动范围，夸大反而被扣「数据不准」。",
+        "只说 hotels fell，不说 hotels remained the largest：结论方向错了，读者会以为酒店被营地取代。",
+        "忘记饼图是整体：写「营地涨了 10 个点」却不交代这 10 个点从哪来，等于把饼图当柱状图写，丢掉唯一的份额视角。"
+      ],
+      "keywords": [
+        { "term": "the share taken by hotels", "para": 1, "quote": "the share taken by hotels fell in each of the three years", "label": "定位第 B 段" },
+        { "term": "more than double the share of any other option", "para": 2, "quote": "hotels accounted for 48% of holidaymakers, more than double the share of any other option", "label": "定位第 C 段" },
+        { "term": "stood at 30%", "para": 2, "quote": "by 2008 it stood at 30%", "label": "定位第 C 段" },
+        { "term": "spread across the cheaper options", "para": 3, "quote": "The growth was spread across the cheaper options rather than concentrated in one", "label": "定位第 D 段" },
+        { "term": "an increase of ten points", "para": 3, "quote": "Camping rose from 16% to 26% between 1988 and 2008, an increase of ten points", "label": "定位第 D 段" },
+        { "term": "hardly changed", "para": 3, "quote": "Staying with friends, by contrast, hardly changed", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

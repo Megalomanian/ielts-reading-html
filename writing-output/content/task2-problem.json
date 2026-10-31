@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "id": "t2-problem",
+      "task": "task2",
+      "cat": "problem",
+      "catLabel": "问题解决",
+      "catEn": "Causes & solutions",
+      "catNote": "问题解决类最常见的死法：原因写两条、方案写两条，但两列对不上号，方案还停在 raise awareness / the government should take action。判卷时只要把方案逐条问一句「它治的是哪个原因」，对不上的那一条就等于没写。",
+      "order": 14,
+      "title": "商店和餐厅里的食物浪费",
+      "titleEn": "Why food is wasted and what can be done",
+      "promptEn": "In some countries, people waste a lot of food which is bought in shops and restaurants. What do you think are the reasons? What can be done to solve this problem?",
+      "promptZh": "在一些国家，人们在商店和餐厅购买的食物被大量浪费。你认为原因是什么？可以怎样解决？<br><b>任务要求：</b>给出原因，并针对这些原因提出解决办法。<br><b>写之前先想清楚：</b>原因和方案必须一一对应。写完逐条检查——<b>如果原因 A 不存在，方案 B 还有必要吗？</b>如果答案仍然是「有必要」，那这条方案就没在治 A，只是凑数。",
+      "tags": ["食物浪费", "原因与方案", "商业机制"],
+      "minutes": 40,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-30", "venue": "郑州轻工业大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "Food thrown away in shops and restaurants is usually blamed on careless consumers, yet much of it is decided before anyone sits down: by the size of the plate and by the date printed on the packet. Each cause needs its own fix, one commercial and one regulatory.",
+          "gist": "开头：拒绝「消费者不小心」这个默认答案，直接点出两个结构性原因（盘子大小、包装日期），并预告一个商业方案、一个监管方案。"
+        },
+        {
+          "text": "Restaurants compete on abundance. A main course is sized to look generous rather than to match appetite — a full plate reads as good value, and a set menu leaves no way to ask for less — so kitchens scrape half-eaten meals into the bin nightly. The remedy is for restaurant groups to sell two sizes at two prices, the smaller genuinely cheaper, and to let customers take leftovers home. Waste then falls inside the kitchen, without asking a single diner to change.",
+          "gist": "原因一 + 方案一：分量是竞争策略的结果，方案就改商业设计（双份量双价格、允许打包），执行主体是餐饮集团。"
+        },
+        {
+          "text": "In shops the damage comes from labels and from the eye. Best-before marks describe quality, but shoppers read them as safety deadlines and clear the fridge on the day they pass; separately, fruit that is misshapen or a day short of its display life is pulled from the shelf. Governments can restrict best-before dates to foods where they mean something, while supermarket chains can loosen appearance standards and sell the rejected crop under a cheap own-brand line.",
+          "gist": "原因二（两套机制：日期被误读 + 外观标准导致主动下架）+ 方案二（政府收紧标签适用范围、超市放宽外观标准），两个执行主体都点名。"
+        },
+        {
+          "text": "The pairing matters because the obvious remedy, a public campaign, treats waste as ignorance. A shopper binning yoghurt on the printed date is obeying the label, not misreading it. Posters ask people to behave better; a smaller default portion and an honest date ask them to do nothing at all.",
+          "gist": "反证段：用「按日期扔酸奶的人其实在遵守标签」说明宣传治不了这两个原因，从反面确认方案与原因咬合。"
+        },
+        {
+          "text": "Neither measure is free: smaller plates trim the average bill, and relaxing appearance rules takes work in the supply chain. Both, however, remove the reason for the waste rather than the waste itself, which is the only test worth applying.",
+          "gist": "结论：先承认代价，再用「治因不治果」收口，与开头的两个原因对齐。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Response",
+          "v": "7.5",
+          "p": "两个原因各领一个方案，中间没有交叉：{{compete on abundance}} 对应双份量菜单与打包，{{Best-before marks}} 与外观下架对应标签规则和采购标准。第四段还替考官做了一次对应检查——说明为什么「提高意识」不成立。若 reasons 写 consumerism、solutions 写 education，两问都答了，却等于没答。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "段序按题目给的两个场景走（餐厅—商店），读者不会迷路；每段内部固定「机制—后果—方案—执行者」四步，一步不省。{{The pairing matters}} 把第三、四段从并列拉成递进：先说怎么治，再说为什么别的治法不行。若改成 Firstly / Secondly / Thirdly，四段会退化成清单。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "浪费不写 waste food，而写 {{scrape half-eaten meals into the bin}}、clear the fridge，动作具体到能看见画面；{{a day short of its display life}} 解释了「还能吃却被撤下」这个零售细节，比 expired 精确。方案动词也不空：{{loosen appearance standards}} 是可以写进采购手册的搭配。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "第二段用破折号把商家动机插进主句，再用 so 收后果，一句讲完「大盘显得划算—套餐不能要少—剩菜进桶」的链条，而不是三句短句；第三段用分号把日期误读与外观下架两条平行机制并置，主干各自独立，长句短句交替，没有为复杂而倒装。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 段", "d": "两句完成开头：第一句否掉「消费者粗心」这个默认归因，第二句把原因压成「盘子大小」和「包装日期」，同时预告一个商业方案、一个监管方案——这一句就是全文目录。" },
+        { "n": "第 2 段第 1–2 句", "d": "Restaurants compete on abundance 先给动机，再给结果。写「餐厅为什么把盘子做大」比写「餐厅给得太多」多一层解释，TR 的差别就在这里。" },
+        { "n": "第 2 段第 3 句", "d": "方案带执行者和定价细节：餐饮集团卖两种规格、小的必须真便宜、允许打包。三件事都能落地，而不是「餐厅应减少浪费」。" },
+        { "n": "第 2 段第 4 句", "d": "回扣因果：改设计比改顾客省事。这句是方案为什么有效的理由，不是重复前文。" },
+        { "n": "第 3 段第 1–2 句", "d": "商店的两个机制分开写：日期是「误读」，外观是「主动下架」。考生常把它们混成「商店扔食物」，混在一起方案必然含糊。" },
+        { "n": "第 3 段第 3 句", "d": "一句里两个主体、两个动作：政府限制 best-before 的适用范围，超市放宽外观标准并降价销售。{{loosen appearance standards}} 是可执行的政策语言。" },
+        { "n": "第 4 段", "d": "反证段。用「按日期扔酸奶的人是在遵守标签」证明宣传无效，从而说明前两个方案对症。多数考生写完方案就停，这一段是 6.5 与 7.5 的分界。" },
+        { "n": "第 5 段", "d": "结论先认代价，再用 {{remove the reason for the waste}} 回到开头，末句给出判准，不引入新论点。" }
+      ],
+      "lexis": [
+        { "w": "compete on abundance", "m": "以「量大」作为竞争手段", "note": "解释餐饮业分量过剩的动机，比 give too much food 有分析性" },
+        { "w": "scrape half-eaten meals into the bin", "m": "把吃了一半的饭菜刮进垃圾桶", "note": "具体动作代替 waste food，有画面且不煽情" },
+        { "w": "best-before marks", "m": "最佳食用日期标识", "note": "与 use-by date（保质期）区分，这个区分本身就是论证内容" },
+        { "w": "a day short of its display life", "m": "距离下架期限只差一天", "note": "零售说法，解释「还能吃却被撤下」的精确表达" },
+        { "w": "loosen appearance standards", "m": "放宽外观标准", "note": "政策动词搭配，比 change the rules 具体" },
+        { "w": "remove the reason for the waste", "m": "消除浪费的成因", "note": "结论句的「治因」表达，与 treat the symptom 对照记忆" }
+      ],
+      "grammar": [
+        "因果链并置：<code>A main course is sized to look generous ... — a full plate reads as good value ... — so kitchens scrape ...</code> —— 破折号插一层商家动机，so 收后果，一句讲完从定价到垃圾的链条。",
+        "分号并列两条平行机制：<code>... on the day they pass; separately, fruit that is misshapen ... is pulled from the shelf</code> —— 两个原因同级，用分号而非另起一段，段落才不散。",
+        "让步 + 转折收尾：<code>Neither measure is free: ..., and ... . Both, however, remove ...</code> —— 先认代价再给判断，结论段显得稳。"
+      ],
+      "examiner": "最容易被忽略的一点是：<strong>这篇没有把「教育消费者」写成任何一个方案</strong>，还在第四段专门解释了为什么不写。多数考生会本能地补一句 governments should raise public awareness，因为听起来安全；但如果原因是「分量由商家定、日期由厂家印」，让顾客更小心并不能减少厨房里的剩菜，方案与原因当场脱钩，TR 就停在 6。反过来，正因为作者敢否掉一个流行方案，剩下两个才像被论证过，而不是从模板里拿的。另一处细节：<strong>两个方案一个落在企业、一个落在政府</strong>，避开了「一切靠政府」的单薄责任分配。",
+      "pitfalls": [
+        "原因写 consumerism、busy lifestyle，方案写 education and awareness。这两句能套到任何题目上，考官一眼看出没读题，TR 上限 6。",
+        "把 best-before 和 use-by 当成一回事。写「政府应取消保质期」既是事实错误，也让方案失去可操作性。",
+        "方案没有执行主体，只写 food waste should be reduced。谁做、做什么动作、在哪一环生效，缺一样就是口号。",
+        "原因段写太长、方案只剩一句。这道题两问权重相当，比例失衡会被判第二问回答不充分。"
+      ],
+      "keywords": [
+        { "term": "compete on abundance", "para": 1, "quote": "Restaurants compete on abundance.", "label": "定位第 B 段" },
+        { "term": "scrape half-eaten meals into the bin", "para": 1, "quote": "so kitchens scrape half-eaten meals into the bin nightly", "label": "定位第 B 段" },
+        { "term": "Best-before marks", "para": 2, "quote": "Best-before marks describe quality, but shoppers read them as safety deadlines", "label": "定位第 C 段" },
+        { "term": "a day short of its display life", "para": 2, "quote": "fruit that is misshapen or a day short of its display life", "label": "定位第 C 段" },
+        { "term": "loosen appearance standards", "para": 2, "quote": "supermarket chains can loosen appearance standards", "label": "定位第 C 段" },
+        { "term": "The pairing matters", "para": 3, "quote": "The pairing matters because the obvious remedy, a public campaign, treats waste as ignorance.", "label": "定位第 D 段" },
+        { "term": "remove the reason for the waste", "para": 4, "quote": "Both, however, remove the reason for the waste rather than the waste itself", "label": "定位第 E 段" }
+      ]
+    }
+  ]
+}

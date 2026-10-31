@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "id": "t2-opinion",
+      "task": "task2",
+      "cat": "opinion",
+      "catLabel": "观点类",
+      "catEn": "Agree or disagree",
+      "catNote": "观点类最容易死在「立场漂移」：开头说完全同意，让步段承认反方有理，结尾又变成两边都对。to what extent 题的正确做法是先划一条边界，全程守在同一条边界上。",
+      "order": 11,
+      "title": "网络看展之后，博物馆还有必要吗",
+      "titleEn": "Will museums and art galleries still be needed?",
+      "promptEn": "Nowadays, some people claim that public museums and art galleries will not be needed because people can see historical objects and works of art by using a computer. To what extent do you agree or disagree?",
+      "promptZh": "题目给出一个「技术替代」的判断：既然电脑上能看到文物和艺术品，公共博物馆与美术馆就不再必要。<br><b>任务要求：</b>回答 to what extent，即同意的程度，并说明理由。<br><b>写之前先想清楚：</b>to what extent 允许你限定同意范围，但必须给出一个能站住的边界——比如「数字复制解决不了实物在场的体验」。边界一旦定下，让步段也只能让到这条线为止，不能顺手承认「所以博物馆确实可以取消」。",
+      "tags": ["科技替代", "文化与公共机构", "立场边界"],
+      "minutes": 40,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-25", "venue": "IDP雅思广州天河区考点" },
+      "essay": [
+        {
+          "text": "It is often argued that museums and art galleries will no longer be needed once historical objects and art can be viewed on a computer. I partly disagree: digital images are a real gain, but they replace the circulation of pictures, not the encounter with an object.",
+          "gist": "开头：两句话完成改写 + 表态，并把「不同意」限定在「实物相遇不可替代」这一条边界上。"
+        },
+        {
+          "text": "The strongest argument for the screen is access. A student in a town without a gallery can examine a scroll in greater detail than a visitor pressed against a glass case, at no cost and at any hour. Museums that digitise their holdings therefore widen their audience rather than lose it; for people who cannot travel, the screen is not a poor substitute but the only one.",
+          "gist": "让步段：认真承认对方最强的一条理由——数字化扩大了可达性，而且对无法出行的人来说是唯一选择。"
+        },
+        {
+          "text": "A reproduction is fixed by someone else's decisions. The photographer chooses the angle and the lighting, so what reaches the screen is an interpretation of the object rather than the object itself. In a gallery the visitor controls those variables: walking around a sculpture shows how its weight is carried, and standing beside a canvas reveals a scale that a laptop flattens. Originals also carry evidence of age that no photograph records.",
+          "gist": "主体一：机制——复制品被他人的视角固定，实物允许观者自己控制角度、距离和尺度。"
+        },
+        {
+          "text": "Museums also do what no archive can: they decide what a public ought to see. A search returns only what the user already suspects exists, whereas a curator sets unfamiliar work beside familiar work and forces a comparison. A class taken through a gallery therefore learns something a list of links cannot teach, and free entry keeps that open to anyone who walks in.",
+          "gist": "主体二：机制——博物馆的功能是公共策展，把观者没在找的东西摆到他面前，这是搜索做不到的。"
+        },
+        {
+          "text": "Museums will change, and should: putting collections online reaches people a ticket price never will. But to conclude that they are therefore unnecessary confuses information with encounter. As long as a city wants original objects kept, shown together and explained in public, the gallery has a purpose.",
+          "gist": "结尾：先承认会变、该上网，再点出对方推理的错误，最后用条件句把立场收在边界上。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Response",
+          "v": "7.5",
+          "p": "题目问 to what extent，不是 yes/no。开头 {{partly disagree}} 立刻给出同意程度，并用冒号把边界写死：数字图像替代的是「图片的流通」，不是「与物的相遇」。此后每一段都在这条线内活动——第 B 段让到「可达性」，第 C、D 段守住「在场」和「策展」。如果开头写成 completely disagree，第 B 段承认线上看展更清楚就会变成自相矛盾；如果写成 completely agree，后两段又无从落笔。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "五段的功能顺序是「表态—让步—机制一—机制二—收束」，让步放在主体之前而不是最后，是因为对方最强的一击必须先处理掉，否则后面两段都像在躲。衔接没有用 Firstly / Secondly，而是靠概念接力：C 段开头 A reproduction 接住 B 段末的 the only one available，D 段 Museums also do what no archive can 把讨论从单件藏品抬到机构层面。第 B 段用 {{widen their audience}} 而不是 attract more visitors，是因为这里的论点是「原来够不到的人够到了」，不是「人变多了」——换错词，让步就让错了地方。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "{{controls those variables}} 用 variables 回指上一句的 angle 和 lighting，一个名词省掉半句重复；{{forces a comparison}} 的 force 带出「由不得你看不看」的意味，正好支撑「策展是一种安排」的论点。结尾 {{confuses information with encounter}} 把对方的错误命名出来，比 it is wrong 有力得多。反过来，如果把 C 段写成 photos cannot show everything，语法没错，但「复制品被谁的视角固定」这层信息全丢了。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "冒号承担「先给判断、再给限定」的功能：<code>I partly disagree: digital images are a real gain, but ...</code>，一句话完成立场和让步预告。分号把两个相关但独立的判断并在一句：<code>... widen their audience rather than lose it; for people who cannot travel, ...</code>。C 段两个动名词主语并列（walking around ... / standing beside ...），让机制读起来像两个可验证的动作，而不是抽象论断。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 段第 1 句", "d": "改写题目：把 will not be needed 换成 will no longer be needed once ... can be viewed，条件关系保留住，因为对方论证的关键正是「一旦能看，就不必去」。" },
+        { "n": "第 1 段第 2 句", "d": "表态 + 划界。{{partly disagree}} 给出程度，冒号后一句把边界写死：替代的是「图片的流通」，不是「与物的相遇」。有了这条边界，第 B 段让步才不会失控。" },
+        { "n": "第 2 段", "d": "让步段，承认对方最强的一点：可达性。用具体对照（无画廊的小镇学生 vs 挤在展柜前的观众）证明线上有时看得更清楚，再用 {{widen their audience}} 把「更多人在看」和「不必有馆」分开。" },
+        { "n": "第 3 段", "d": "机制一，三步推进：复制品由他人决定 → 你收到的是解释而非物 → 实物让你自己控制视角与尺度（{{controls those variables}}）。例子只作为机制的落点（雕塑、画布），不堆例子。" },
+        { "n": "第 3 段末句", "d": "补一条只能靠实物成立的证据：{{evidence of age}}。它把论证从「体验更好」推到「信息不同」，强度高一个档。" },
+        { "n": "第 4 段", "d": "机制二，把层次从「单件藏品」换到「公共机构」：搜索只返回你已知的东西，策展 {{forces a comparison}}。最后半句 free entry 顺带回应题目里的 public。" },
+        { "n": "第 5 段", "d": "结论先让一步（会变、该上网），再给对方推理定性（{{confuses information with encounter}}），最后用 as long as 条件句收尾——既不喊口号，也不重复开头。" }
+      ],
+      "lexis": [
+        { "w": "pressed against a glass case", "m": "挤在玻璃展柜前", "note": "用具体场景替代抽象的 see something in person，画面感立刻出来" },
+        { "w": "fixed by someone else's decisions", "m": "被他人的决定固定住", "note": "把「复制品不真实」写成一个可追踪的过程，而不是形容词" },
+        { "w": "carry evidence of age", "m": "带着年代的痕迹", "note": "carry 比 have 更适合「物承载信息」；{{evidence of age}} 指裂纹、修补、褪色这些只有原件才留得下的痕迹" },
+        { "w": "forces a comparison", "m": "迫使（观者）比较", "note": "策展是强制的，不是「提供」比较；一个动词交代了机构权力" },
+        { "w": "confuses information with encounter", "m": "把信息与相遇混为一谈", "note": "结尾定性句，一句命名对方论证的错误，比 it is wrong 精确" }
+      ],
+      "grammar": [
+        "冒号展开：<code>I partly disagree: digital images are a real gain, but ...</code> —— 前半给程度，后半给边界，比拆成两句更紧，也不会让立场显得犹豫。",
+        "分号并列：<code>... widen their audience rather than lose it; for people who cannot travel, the screen is not ...</code> —— 两个判断相关但独立，用 and 会拉平成并列，用分号保留层次。",
+        "动名词作主语：<code>walking around a sculpture shows how its weight is carried</code> —— 省掉 if a visitor walks around，动作本身成为论据。"
+      ],
+      "examiner": "这篇最容易被忽略的判断在第 2 段：<strong>让步段承认的是「谁能看到」，而不是「博物馆是否还有必要」</strong>。很多 6 分作文在这里写 Museums are still important because they are educational，看似让步，其实只是把结论重复了一遍，反方论点根本没被认真对待；另一种更糟的写法是承认过头——「所以线上观展确实可以取代大部分功能」——然后第 3 段又反悔，考官读到的就是一个没有立场的作者。让步的边界和立场的边界必须是同一条。",
+      "pitfalls": [
+        "开头写 completely disagree，第 2 段又大谈线上观展的好处，读者会认为你在自我拆台。to what extent 题应在第一段就给出比例（partly / largely），并说明比例从哪来。",
+        "让步段空转：However, museums are still important because they are educational. 没有承认对方的具体机制（可达性、细节、零成本），等于没让步，Coherence 上不去。",
+        "主体段用个人经历代替机制，比如「我上次去博物馆很感动」。例子可以用，但必须能推出一个普遍理由，否则只是故事。",
+        "结尾重复第一段原句。结论应该落回条件——只要城市还愿意公共收藏实物，机构就有理由存在——而不是把开头抄一遍。"
+      ],
+      "keywords": [
+        { "term": "partly disagree", "para": 0, "quote": "I partly disagree: digital images are a real gain", "label": "定位第 A 段" },
+        { "term": "widen their audience", "para": 1, "quote": "Museums that digitise their holdings therefore widen their audience rather than lose it", "label": "定位第 B 段" },
+        { "term": "controls those variables", "para": 2, "quote": "In a gallery the visitor controls those variables", "label": "定位第 C 段" },
+        { "term": "evidence of age", "para": 2, "quote": "Originals also carry evidence of age that no photograph records", "label": "定位第 C 段" },
+        { "term": "forces a comparison", "para": 3, "quote": "sets unfamiliar work beside familiar work and forces a comparison", "label": "定位第 D 段" },
+        { "term": "confuses information with encounter", "para": 4, "quote": "But to conclude that they are therefore unnecessary confuses information with encounter", "label": "定位第 E 段" }
+      ]
+    }
+  ]
+}

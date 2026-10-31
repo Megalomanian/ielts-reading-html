@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "id": "t1-bar",
+      "task": "task1",
+      "cat": "bar",
+      "catLabel": "柱状图",
+      "catEn": "Bar chart",
+      "catNote": "分组柱状图最大的坑是按活动一组一段写成流水账——先按「升 / 降」分组，再在组内比幅度和名次",
+      "order": 2,
+      "title": "成人参与四项休闲活动的比例",
+      "titleEn": "Percentage of adults taking part in four leisure activities, 2005 and 2015",
+      "promptEn": "The bar chart below shows the percentage of adults in a country who took part in four leisure activities in 2005 and 2015.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "下图显示某国 2005 与 2015 年参与四项休闲活动的成人比例。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>四项活动两项涨、两项跌，而且第一名换了人——阅读从 45% 跌到 34%，不再是最普及的活动。Overview 要把「哪两组」和「谁取代了谁」一起说清，细节段再按升降分组给数字。",
+      "chart": {
+        "kind": "bar",
+        "caption": "Percentage of adults taking part in four leisure activities, 2005 and 2015",
+        "unit": "%",
+        "categories": ["Reading", "Gardening", "Team sports", "Online gaming"],
+        "series": [
+          { "name": "2005", "values": [45, 38, 22, 12] },
+          { "name": "2015", "values": [34, 28, 40, 35] }
+        ],
+        "note": "数据按考场回忆复原为示意数据，用于练结构，不保证与原卷一致。"
+      },
+      "tags": ["两组年份", "有升有降", "名次变化"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-27", "venue": "台北市農會信義大樓" },
+      "essay": [
+        {
+          "text": "The bar chart compares the percentage of adults taking part in four leisure activities in 2005 and 2015: reading, gardening, team sports and online gaming.",
+          "gist": "开头：改写题目。四项活动放到冒号后列举，主句不被四个名词撑长。"
+        },
+        {
+          "text": "Overall, team sports and online gaming gained ground, whereas reading and gardening lost it. The change was big enough to reverse the ranking: team sports, third in 2005, had become the most common activity by 2015.",
+          "gist": "概述：先按方向把四项分成两组，再补一句名次反转。全段不出现任何数字。"
+        },
+        {
+          "text": "In 2005, 22% of adults played team sports and only 12% played online games, the lowest figure on the chart. Both grew sharply over the next ten years. Team sports rose to 40%, close to doubling, while online gaming climbed to 35%, almost tripling, so that it was no longer a minority interest.",
+          "gist": "细节段一：只写上升的两项。先给起点，再一句总起，最后用两个倍数完成组内比较。"
+        },
+        {
+          "text": "Reading and gardening moved the other way, though neither collapsed. The proportion of adults who read fell from 45% to 34%, which cost reading its position at the top of the chart, and gardening declined more gently, from 38% to 28%. Even so, the four activities ended the period within twelve percentage points of one another, compared with a spread of 33 points in 2005.",
+          "gist": "细节段二：下降的两项，先写跌幅大的阅读并点出丢了第一名，再写跌幅小的园艺，最后用极差收一个整体判断。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "四项活动、两个年份全部覆盖，而且在 Overview 里抓住了这道题真正的 main feature：不只是「两项升两项降」，还有第一名换人——2005 年最高的阅读到 2015 年只排第三。只写方向不写名次，Task Achievement 一般停在 7；把名次反转写出来，才够 7.5。另外结尾用「极差从 33 点缩到 12 点」把四个数字当成一个整体看，而不是四份独立报告。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "分段按变化方向切：上升组一段、下降组一段，读者拿到的是两条相反的走势。这也让 {{close to doubling}} 和 {{almost tripling}} 能在同一段里互为参照。若改成 Reading 一段、Gardening 一段、Team sports 一段、Online gaming 一段，段与段之间就没有任何比较关系，Coherence 会掉到 6——这正是 {{gained ground}} 这种成对动词能省下的结构成本。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "倍数表达不重复：{{close to doubling}} 配 22%→40%，{{almost tripling}} 配 12%→35%，都按实际倍数选词，没有一律说 increased。{{declined more gently}} 把「跌 10 点」和「跌 11 点」的细微差别写出来，比两个 decreased 有信息。{{cost reading its position}} 把「从第一掉下来」写成一个因果小句，而不是 reading decreased and was no longer the highest。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "Overview 第二句 <code>team sports, third in 2005, had become the most common activity by 2015</code> 用了插入语加过去完成时：插入语省掉一个定语从句，by 2015 又把「先三后一」的先后关系标清楚。结尾 {{within twelve percentage points}} 是介词短语做范围限定，比 all four were similar 精确，也不必另起一句。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。四项活动放在冒号后列举，是为了让 the percentage of adults taking part in four leisure activities 这个长主语先落地，列完再收年份。" },
+        { "n": "第 2 句", "d": "Overview 前半：{{gained ground}} / lost it 一对动词就把四项分成两组，比分别说 two increased and two decreased 更省字，也自带对比。" },
+        { "n": "第 3 句", "d": "Overview 后半：补名次反转。这里只说 third 和 the most common，不给数字——概述给形状，细节给数据。" },
+        { "n": "第 4–5 句", "d": "细节段一先给 2005 的两个起点（22%、12%），再用 Both grew sharply 一句总起，避免「先报一个数、再报一个数」的流水账节奏。" },
+        { "n": "第 6 句", "d": "上升组的核心：{{close to doubling}} 与 {{almost tripling}} 并置，一句话完成组内比较；so that 从句顺带交代了 12% 这个「少数派」身份的消失。" },
+        { "n": "第 7–8 句", "d": "下降组复制同一结构：先起点 45% / 38%，再给终点。which 从句专写阅读丢榜首的后果，{{declined more gently}} 则把园艺的跌幅差异标出来。" },
+        { "n": "第 9 句", "d": "收尾不重复数字，而是把两列数据换算成「极差」：33 点缩到 12 点。{{within twelve percentage points}} 这种说法考官看的是你有没有把四个数字当整体读。" }
+      ],
+      "lexis": [
+        { "w": "gained ground", "m": "占了上风，份额上升（后半句 lost it 与之成对）", "note": "一组涨一组跌时，比 increase / decrease 更能体现「相对位置」" },
+        { "w": "close to doubling", "m": "接近翻倍", "note": "22%→40% 是 1.8 倍，只能说 close to，不能说 doubled" },
+        { "w": "almost tripling", "m": "几乎增至三倍", "note": "12%→35% 是 2.9 倍，almost 一词把误差挡住" },
+        { "w": "declined more gently", "m": "跌幅更温和", "note": "两项都在跌但幅度不同时，用它替代第二个 decreased" },
+        { "w": "cost reading its position", "m": "使阅读丢掉了榜首位置", "note": "写排名变化时，比 was no longer the highest 更像人话" },
+        { "w": "a spread of 33 points", "m": "33 个百分点的极差", "note": "结尾把最大值减最小值说成一个数，比重复四个百分比有力" }
+      ],
+      "grammar": [
+        "冒号列举：<code>four leisure activities in 2005 and 2015: reading, gardening, team sports and online gaming</code> —— 列举甩到句末，主句保持短，读起来不喘。",
+        "过去完成时标先后：<code>team sports, third in 2005, had become the most common activity by 2015</code> —— by + 过去时间点是过去完成时的固定信号，用来写「到某年为止已发生」。",
+        "介词短语限定范围：<code>within twelve percentage points of one another</code> —— 比 all four were similar 精确，还省掉一个分句。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>柱状图的 main feature 往往是「谁取代了谁」，而不是「谁涨谁跌」</strong>。方向只是第一层，2005 年第一名（阅读 45%）到 2015 年跌到第三（34%）、团队运动从第三升到第一，这才是这道题独有的信息。只写两项升两项降，任何一道双向柱状图都能套用，考官一眼看出是背模板，Task Achievement 停在 7。另外注意最后一句的极差：它证明作者把四个数字当成一个分布在看，而不是四条互不相干的新闻。",
+      "pitfalls": [
+        "按活动分四段，每段一句「X rose from ... to ...」：四项之间零比较，Coherence 直接 6 分。",
+        "Overview 里写 22%→40%：把概述写成第二个细节段，等于浪费了唯一一次「先给结论」的机会。",
+        "把 12%→35% 说成 tripled：实际是 2.9 倍，倍数说错在 Task Achievement 上算数据误读，比用词平淡更致命。",
+        "只写升降、不写名次，或者反过来只写「阅读最受欢迎」而不看 2015 年——单一年份的排名不能当结论。"
+      ],
+      "keywords": [
+        { "term": "gained ground", "para": 1, "quote": "team sports and online gaming gained ground, whereas reading and gardening lost it", "label": "定位第 B 段" },
+        { "term": "close to doubling", "para": 2, "quote": "Team sports rose to 40%, close to doubling", "label": "定位第 C 段" },
+        { "term": "almost tripling", "para": 2, "quote": "online gaming climbed to 35%, almost tripling", "label": "定位第 C 段" },
+        { "term": "cost reading its position", "para": 3, "quote": "which cost reading its position at the top of the chart", "label": "定位第 D 段" },
+        { "term": "declined more gently", "para": 3, "quote": "gardening declined more gently, from 38% to 28%", "label": "定位第 D 段" },
+        { "term": "within twelve percentage points", "para": 3, "quote": "the four activities ended the period within twelve percentage points of one another", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

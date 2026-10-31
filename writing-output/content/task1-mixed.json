@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "id": "t1-mixed",
+      "task": "task1",
+      "cat": "mixed",
+      "catLabel": "组合图",
+      "catEn": "Mixed charts",
+      "catNote": "组合图最容易写坏的地方是「两图各写一段」：饼图一段、条形图一段，语法都对，但两张图从头到尾没有发生关系，Task Achievement 直接封顶 6 分",
+      "order": 7,
+      "title": "澳大利亚的家庭用水与用途细分",
+      "titleEn": "Water use in Australia: total consumption and household breakdown",
+      "promptEn": "The pie charts below show the proportion of water used by different sectors in Australia and the breakdown of water use within Australian households.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "两个饼图：左图是澳大利亚家庭内部用水按用途的细分，右图是全国总用水量按行业的分配。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>这不是两篇小作文，而是一道题。先判断两个「盘子」的关系——家庭只占全国很小一块，但这一小块内部又有自己的第一名。全文至少要有一句把「小」和「内部最大」放在一起说。",
+      "chart": {
+        "kind": "pie",
+        "caption": "Water use in Australia: household breakdown and total use by sector",
+        "unit": "%",
+        "panels": [
+          {
+            "title": "Household use",
+            "slices": [
+              { "label": "Shower", "value": 34 },
+              { "label": "Toilet", "value": 28 },
+              { "label": "Laundry", "value": 16 },
+              { "label": "Garden", "value": 15 },
+              { "label": "Other", "value": 7 }
+            ]
+          },
+          {
+            "title": "Total water use by sector",
+            "slices": [
+              { "label": "Household", "value": 18 },
+              { "label": "Agriculture", "value": 65 },
+              { "label": "Industry", "value": 12 },
+              { "label": "Services", "value": 5 }
+            ]
+          }
+        ],
+        "legend": ["Shower", "Toilet", "Laundry", "Garden", "Other", "Household", "Agriculture", "Industry", "Services"],
+        "note": "数据按考场回忆复原为示意数据，用于练结构，不保证与原卷一致；两个饼图各自独立配色，颜色不跨图对应。"
+      },
+      "tags": ["双图互证", "占比", "跨图比较"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-28", "venue": "IDP 雅思上海杨浦区考点" },
+      "essay": [
+        {
+          "text": "The two pie charts both concern water use in Australia. The first breaks household use down into five purposes, while the second divides the country's total water use between four sectors.",
+          "gist": "开头：一句话交代两张图各自是什么，并用 both concern 先把它们绑在同一个话题下。"
+        },
+        {
+          "text": "Overall, agriculture is by far the largest consumer of water nationally, and the household sector, although it takes less than a fifth of the total, is itself dominated by showering and toilet flushing rather than by garden watering.",
+          "gist": "概述：不分开概述两张图，而是一句写「谁最大」，一句写「小盘子里谁最大」，中途用 although 就把两图的关系先立住。"
+        },
+        {
+          "text": "Nationally, agriculture accounts for 65% of water use, close to two thirds. Households come second with 18%, followed by industry at 12% and services at 5%, so the four sectors form a steep hierarchy rather than a balanced split.",
+          "gist": "细节段一：只写总用水这张图，给出四级台阶，并用 steep hierarchy 定性，为后文铺垫。"
+        },
+        {
+          "text": "Within the home, showering is the single biggest draw at 34%, with toilets close behind at 28%. Laundry and garden use are almost equal, at 16% and 15% respectively, and the remaining 7% goes on other purposes. The two charts meet at an unexpected point: households use under a fifth of the national total, yet showering and flushing alone absorb 62% of the water that reaches them, so national demand and household demand are shaped by different priorities.",
+          "gist": "细节段二：先写家庭内部排序，最后一句把两张图接上——总量占比小，但内部两项就吃掉近三分之二。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "两张图都覆盖了，而且做了一件多数考生不做的事：把 18% 和 34%+28% 放在同一句里算了一次账，得出 {{absorb 62%}}。这一步让「家庭用水占比小」和「家庭内部以洗浴为主」互为解释，而不是两条互不相干的信息。没有这句，两段再准确也只是并列，不是组合。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "分段按「总盘子 / 家庭内部」切，正好对应两张图，读者不会迷路；段间用 Nationally 和 Within the home 两次换镜头。Overview 里提前用 although 埋了跨图关系，末段再用 {{The two charts meet at an unexpected point}} 收口，结构上是「预告—兑现」，不是两张图各说各话。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "占比表达没有重复：{{by far the largest consumer}}、accounts for、come second with、{{close behind}}、almost equal 各自承担不同精度，其中 {{close to two thirds}} 是把 65% 换成分数的换算式说法，{{the single biggest draw}} 则用 draw 点明「取水量」而不只是 use。{{steep hierarchy}} 是对四级占比的整体判断，比 four different percentages 有价值得多；数据类题目最怕的就是把数字念一遍。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "第二段的 although it takes less than a fifth of the total 插在主语和谓语之间，让步信息不抢主句，是很典型的 7 分操作；末句用 yet 连接两个分句，so 再引出结论，一句话完成「对比—推论」两步，避免了 and also 那种平铺。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "双图开头。不说 The first chart shows... The second chart shows... 两句，而是一句总起、一句分述，并用 both concern 点明同属一个话题。" },
+        { "n": "第 2 句", "d": "概述。这是全篇最关键的一句：主句给农业 65% 的地位，although 从句给家庭「不到五分之一」的量级，再把内部第一名塞进同一个句子，两图关系一次交代完。" },
+        { "n": "第 3–4 句", "d": "总用水细节。从高到低报四级，close to two thirds 给 65% 一个可感知的换算，steep hierarchy 定性收尾。" },
+        { "n": "第 5 句", "d": "切到家庭内部。the single biggest draw 点明第一名，close behind 说明 34 与 28 的差距很小——这两个词比两个百分比更能传达「接近」。" },
+        { "n": "第 6 句", "d": "补齐剩余三项，用 respectively 一次对两个数，避免 Laundry is 16% and garden is 15% 这种重复句式。" },
+        { "n": "第 7 句", "d": "跨图句。under a fifth 回指 18%，62% 是现场算出来的（34+28），最后用 two entirely different things 给全文一个判断，而不是再报一次数。" }
+      ],
+      "lexis": [
+        { "w": "by far the largest consumer", "m": "遥遥领先的最大消耗者", "note": "by far 只能配最高级，65% 对 18% 这种差距才用得起" },
+        { "w": "close to two thirds", "m": "接近三分之二", "note": "把 65% 换成分数，读者才有量感；比 65 per cent 多一层解释" },
+        { "w": "steep hierarchy", "m": "陡峭的层级（差距悬殊的梯队）", "note": "四个数从 65 掉到 5，用 hierarchy 描述结构，比 different 准确" },
+        { "w": "the single biggest draw", "m": "最大的单项消耗", "note": "draw 在用水语境里指「取用量」，比 use 具体" },
+        { "w": "close behind", "m": "紧随其后", "note": "两者差距很小时用，替代 the second is also high" },
+        { "w": "two entirely different things", "m": "两件完全不同的事", "note": "跨图收尾的判断句，替代 In conclusion 式的空转" }
+      ],
+      "grammar": [
+        "让步状语插入：<code>the household sector, although it takes less than a fifth of the total, is itself dominated by ...</code> —— 让步信息放在主谓之间，主句仍然是「家庭内部以洗浴为主」，重心不乱。",
+        "yet 连接对比分句：<code>households use under a fifth ..., yet showering and flushing alone absorb 62% ...</code> —— yet 比 but 更书面，且天然带「出乎意料」的语气，正好配合 unexpected point。",
+        "分词与介词短语做补充：<code>with toilets close behind at 28%</code> / <code>at 16% and 15% respectively</code> —— 用 with 结构和 respectively 把两组数据压进一句，避免句子数量膨胀。"
+      ],
+      "examiner": "这篇最容易被忽略的一点是：<strong>18% 和 62% 都不是图上的数字</strong>。62% 是考生自己把 34 与 28 相加得来的，而正是这个加法让两张图发生了关系。组合图的高分从来不靠「两图都写到」，靠的是你发现了一个只有把两图放在一起才看得见的事实。另一个细节：Overview 只提到 65% 和「不到五分之一」，没有把 34、28 全搬上去——概述给的是关系，细节段才给数据。",
+      "pitfalls": [
+        "第一段写左图、第二段写右图，结尾加一句 In conclusion, both charts show water use。语法全对，但两图零互动，TA 上不了 7。",
+        "把两张图的百分比混着比：拿家庭的 34%（洗浴）去和全国的 12%（工业）比大小，两个分母不同，比出来是无意义的结论。",
+        "Overview 里同时塞进五个家庭用途的百分比，概述变成压缩版细节段，读者反而抓不到重点。",
+        "用 the biggest sector is household 开头——图上明明是农业 65%，看错主次是最致命的读图错误。"
+      ],
+      "keywords": [
+        { "term": "by far the largest consumer", "para": 1, "quote": "agriculture is by far the largest consumer of water nationally", "label": "定位第 B 段" },
+        { "term": "close to two thirds", "para": 2, "quote": "agriculture accounts for 65% of water use, close to two thirds", "label": "定位第 C 段" },
+        { "term": "steep hierarchy", "para": 2, "quote": "the four sectors form a steep hierarchy rather than a balanced split", "label": "定位第 C 段" },
+        { "term": "the single biggest draw", "para": 3, "quote": "showering is the single biggest draw at 34%", "label": "定位第 D 段" },
+        { "term": "close behind", "para": 3, "quote": "with toilets close behind at 28%", "label": "定位第 D 段" },
+        { "term": "absorb 62%", "para": 3, "quote": "showering and flushing alone absorb 62% of the water that reaches them", "label": "定位第 D 段" },
+        { "term": "The two charts meet at an unexpected point", "para": 3, "quote": "The two charts meet at an unexpected point", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

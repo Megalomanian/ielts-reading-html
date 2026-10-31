@@ -15,10 +15,12 @@
 
 ## 先看效果
 
-在线示例：
+在线示例（GitHub Pages，`main` 分支更新后自动部署三页）：
 
 ```text
-https://megalomanian.github.io/ielts-reading-html/
+落地页       https://megalomanian.github.io/ielts-reading-html/
+写作范文库   https://megalomanian.github.io/ielts-reading-html/writing/
+阅读示例     https://megalomanian.github.io/ielts-reading-html/reading/
 ```
 
 也可以直接用浏览器打开本地文件：
@@ -154,12 +156,32 @@ Copy-Item -Recurse `
 
 OpenCode 会自动发现 `~/.config/opencode/skills/<id>/SKILL.md`。
 
+## 配套：IELTS Buddy Skills
+
+本仓库同时集成了 [Jobo16/ielts-buddy](https://github.com/Jobo16/ielts-buddy) 的 10 个 Agent Skills（`.agents/skills/`）与配套脚本（`scripts/`），用于读取 IELTS Buddy 线上练习记录、题库、词汇和口语素材。
+
+安装、账号绑定与使用方式见 **[docs/ielts-buddy.md](docs/ielts-buddy.md)**。
+
+分工：**纸质/截图试卷**走上面的 `ielts-reading-html` 生成单文件 HTML；**线上刷题记录**走 IELTS Buddy 接口复盘。
+
+## 写作范文库
+
+`writing-output/` 里是另一份独立产物：按题型组织的雅思写作题目 + 原创 7.5 分范文 + 逐段解析，同样是一个单文件 HTML。
+
+- 题目来自 IELTS Buddy 公开的「写作考场回忆」接口（3,743 条 / 411 个考试日）
+- 覆盖 Task 1 八种图表 + Task 2 五种提问方式，共 13 篇
+- 每篇四栏拆解：评分维度 / 结构拆解 / 词汇与语法 / 考官视角与踩坑
+- 点解析关键词可在范文里精确高亮对应句子
+
+详见 **[writing-output/README.md](writing-output/README.md)**。
+
 ## 边界
 
 - 照片模糊/缺页时，skill 会要求补拍，不会用“雅思真题记忆”补内容。
 - 表格、流程图、图示会被线性化，复杂版式无法 100% 还原。
 - 答案若来自模型推导，会在页面标注；有官方答案页时以官方为准。
 - 原文与题目版权归原作者/出版方所有，生成物仅供个人学习，请勿公开传播或商用。
+- 写作范文库里的图表数字是按考场回忆复原的示意数据，不是官方数据；范文是教学示范，不是标准答案。
 
 ## 许可
 

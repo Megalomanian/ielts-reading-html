@@ -1,10 +1,13 @@
-name: Deploy demo to GitHub Pages
+name: Deploy demos to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
       - ".opencode/skills/ielts-reading-html/**"
+      - "writing-output/**"
+      - "docs/pages-index.html"
+      - "README.md"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -24,12 +27,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify inputs exist
+        run: |
+          missing=0
+          for f in \
+            "writing-output/index.html" \
+            ".opencode/skills/ielts-reading-html/examples/demo.html" \
+            ".opencode/skills/ielts-reading-html/examples/demo-case.json" \
+            "docs/pages-index.html"; do
+            if [ ! -f "$f" ]; then
+              echo "::error::missing required file: $f"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
       - name: Prepare static site
         run: |
-          mkdir -p site
-          cp .opencode/skills/ielts-reading-html/examples/demo.html site/index.html
-          cp .opencode/skills/ielts-reading-html/examples/demo-case.json site/demo-case.json
+          mkdir -p site/writing site/reading
+          cp writing-output/index.html site/writing/index.html
+          cp .opencode/skills/ielts-reading-html/examples/demo.html site/reading/index.html
+          cp .opencode/skills/ielts-reading-html/examples/demo-case.json site/reading/demo-case.json
+          cp docs/pages-index.html site/index.html
           touch site/.nojekyll
+          find site -type f -printf '%8s  %p\n' | sort -k2
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

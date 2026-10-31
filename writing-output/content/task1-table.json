@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "id": "t1-table",
+      "task": "task1",
+      "cat": "table",
+      "catLabel": "表格",
+      "catEn": "Table",
+      "catNote": "数据一多就挑不出重点，把表格从头到尾抄一遍——考官要的是「谁最大、谁变得最快」，不是全部数字",
+      "order": 4,
+      "title": "四个非洲国家的石油消费量",
+      "titleEn": "Oil consumption in four African countries, 2000 and 2020",
+      "promptEn": "The table below shows the amount of oil consumed per day in four African countries in 2000 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "下表显示尼日利亚、埃及、南非、肯尼亚四国 2000 年与 2020 年的日均石油消费量（单位：桶/日）。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>表格里全是七八位的数字，先别急着抄——先回答两个问题：谁的量级最大？谁的增幅最陡？这两句就是 Overview，数字只是后面用来撑结论的证据。<br><b>题目来源：</b>2026-10-24 IDP 雅思青岛市南区考点（考场回忆：「Table 题，非洲四个国家的石油用量，数字都特别大，250000000 这种」）。",
+      "chart": {
+        "kind": "table",
+        "caption": "Daily oil consumption in four African countries, 2000 and 2020 (barrels/day)",
+        "head": ["Country", "2000 (barrels/day)", "2020 (barrels/day)"],
+        "rows": [
+          ["Nigeria", "250,000,000", "400,000,000"],
+          ["Egypt", "70,000,000", "190,000,000"],
+          ["South Africa", "120,000,000", "150,000,000"],
+          ["Kenya", "25,000,000", "35,000,000"],
+          ["Change in consumption, 2000–2020", "—", "Nigeria +60% · Egypt +171% · South Africa +25% · Kenya +40%"]
+        ],
+        "note": "数值按考场回忆中「250000000 这种大数字」复原为示意数据，刻意保留六位以上的写法，用来练 million / billion 换算；不保证与原卷一致。"
+      },
+      "tags": ["大数字", "横向比较", "两个时间点"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-24", "venue": "IDP雅思青岛市南区考点" },
+      "essay": [
+        {
+          "text": "The table compares the amount of oil consumed each day in four African countries (Nigeria, Egypt, South Africa and Kenya) in 2000 and 2020.",
+          "gist": "开头：改写题目，点名四个国家与两个年份，把单位（每天多少桶）交代清楚。"
+        },
+        {
+          "text": "Overall, Nigeria consumed far more oil than any other country in both years, while Egypt recorded by far the fastest growth. Kenya, by contrast, remained the smallest consumer of the four.",
+          "gist": "概述：只给两个判断——Nigeria 量级一骑绝尘、Egypt 增速最陡，并顺带锁定最小者，一个数字都不写。"
+        },
+        {
+          "text": "In 2000, Nigeria used 250 million barrels a day, ten times Kenya's 25 million, while South Africa consumed 120 million and Egypt just 70 million. By 2020 every country was using more: Nigeria had reached 400 million, approaching half a billion barrels a day, and South Africa had edged up to 150 million.",
+          "gist": "细节段一：比体量。用倍数关系压缩四个并列数字，再把七位数统一读成 million。"
+        },
+        {
+          "text": "Egypt, however, was the standout performer, overtaking South Africa to become the second largest consumer. Its consumption almost tripled, from 70 million to 190 million barrels a day, the sharpest rise of the four. Kenya also grew, from 25 million to 35 million, yet it still used less than a tenth of Nigeria's total.",
+          "gist": "细节段二：比增速。Egypt 单独展开并点出排名反超，Kenya 用与 Nigeria 的比例收尾。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "两个年份、四个国家全部覆盖，但每个数字都挂在一个判断上：{{far more oil than any other country}} 交代量级格局，{{by far the fastest growth}} 交代增速冠军，第 4 段还补了 Egypt 反超 South Africa 的排名变化。表格题最怕平均用力——四国各写一句「从 X 到 Y」，信息是全的，却没回答「谁最值得注意」，TA 只能停在 6。这里结论进 Overview、数字在后面回填，顺序合理。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "分段依据是「在比什么」：第 3 段横向比体量，第 4 段纵向比增速。按国家分四段是最常见的写法，但四段之间没有比较对象，读起来像四张互不相干的收据。段内用 In 2000 / By 2020 两个时间锚点推进，用 while、however、yet 标记真实的对立关系，不是为了连接而连接。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "数字处理是这篇的核心：250,000,000 一律读成 250 million，400 million 再说成 {{approaching half a billion}}，读者不用数零。动词按幅度分层——{{edged up to}} 只是小幅上行，{{almost tripled}} 是接近三倍，grew 是中性的稳定增长；如果全用 increased，这三档幅度就被抹平了，Lexical 直接掉到 6。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "比较句省略重复中心词：ten times Kenya's 25 million，所有格后面不再写 consumption。{{the sharpest rise of the four}} 用同位语把评价并进同一句，比另起一句 This was the sharpest rise 紧凑。{{less than a tenth of}} 把「最小」换算成比例，避免结尾再报一个孤零零的数字。had reached / had edged up 两个过去完成时以 2020 为观察点回看二十年。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。四个国家按题干顺序点名，最后落到 in 2000 and 2020——表格题开头必须把单位和时间点说清，否则后面所有数字都悬空。" },
+        { "n": "第 2 句", "d": "Overview 第一条：体量格局。{{far more oil than any other country}} 是「遥遥领先」的英文落地方式，不写具体倍数。" },
+        { "n": "第 3 句", "d": "Overview 第二条：增速，并顺手交代 Kenya 始终最小。两句覆盖题目要求点出的两个特征，一个数字不放。" },
+        { "n": "第 4 句", "d": "2000 年的横向比较。用 ten times 和 and Egypt just 70 million 的省略结构，把四个数字压进一句；这是表格信息过载时最有效的减法。" },
+        { "n": "第 5 句", "d": "2020 年先用 every country was using more 一句带过共同点，再只给两个关键数值，避免把四个数字再抄一遍。" },
+        { "n": "第 6 句", "d": "Egypt 单独展开，并写明它超过 South Africa——排名变化是表格题最容易被漏掉的特征。" },
+        { "n": "第 7 句", "d": "{{almost tripled}} 给性质，from 70 million to 190 million 给证据，{{the sharpest rise of the four}} 用同位语收住评价，一句顶三句。" },
+        { "n": "第 8 句", "d": "Kenya 收尾，用 {{less than a tenth of}} 把「最小」换算成与 Nigeria 的比例，结尾不落在孤立的数字上。" }
+      ],
+      "lexis": [
+        { "w": "far more oil than any other country", "m": "比任何其他国家都多得多", "note": "「遥遥领先」不要写 the most，用 far more than any other 才有量级感" },
+        { "w": "by far the fastest growth", "m": "遥遥领先的最快增速", "note": "by far 修饰最高级，用来锁定「增速冠军」" },
+        { "w": "approaching half a billion", "m": "接近五亿", "note": "六位以上数字的读法：先换成 million / billion 再进句子" },
+        { "w": "edged up to", "m": "小幅攀升到", "note": "涨幅百分之一二十时用它；换成 soar 会失真" },
+        { "w": "almost tripled", "m": "接近三倍", "note": "70→190 是 2.7 倍，说 almost tripled 比 increased by 171% 更自然" },
+        { "w": "less than a tenth of", "m": "不到……的十分之一", "note": "结尾做比例对照，比再报一个数字有信息量" }
+      ],
+      "grammar": [
+        "并列句省略谓语（gapping）：<code>South Africa consumed 120 million and Egypt just 70 million</code> —— 第二个分句省掉 consumed，四个国家的数字才塞得进一句。",
+        "同位语补评价：<code>the sharpest rise of the four</code> —— 逗号后直接下判断，不用另起一句 This was the sharpest rise of the four，句子不中断。",
+        "过去完成时：<code>Nigeria had reached 400 million</code> —— 以 2020 为观察点回看此前的变化，比一般过去时更能体现「到那一年为止已经完成」。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>表格题的分段依据不是「国家」，而是「你在比较什么」</strong>。第 3 段的比较轴是体量，第 4 段的比较轴是增速，所以每段都能给出一个结论；一旦按国家分四段，每段只剩事实、没有结论，TA 和 CC 会同时卡在 6。另一个细节：题目给的是 250,000,000 这种写法，原样搬进句子，考官得自己数零，读者也无法一眼比较——换算成 million / billion 不是炫技，是 Task Achievement 要求的 clarity。",
+      "pitfalls": [
+        "把 250,000,000 原样抄进句子，一段里出现四次，既难读又容易抄错位数；换成 250 million 之后，比较关系才显出来。",
+        "四个国家各写一段，每段「从 X 到 Y」，四段之间没有任何比较，等于把表格翻译了一遍。",
+        "Overview 只写「所有国家的消费量都上升了」。这是四国唯一的共同点，也是信息量最低的一句，等于没写概述。",
+        "漏掉排名变化：Egypt 从第三升到第二、反超 South Africa，是表格里唯一一次位次变动，写出来立刻区别于只报数字的答卷。"
+      ],
+      "keywords": [
+        { "term": "far more oil than any other country", "para": 1, "quote": "Nigeria consumed far more oil than any other country in both years", "label": "定位第 B 段" },
+        { "term": "by far the fastest growth", "para": 1, "quote": "while Egypt recorded by far the fastest growth", "label": "定位第 B 段" },
+        { "term": "approaching half a billion", "para": 2, "quote": "Nigeria had reached 400 million, approaching half a billion barrels a day", "label": "定位第 C 段" },
+        { "term": "edged up to", "para": 2, "quote": "and South Africa had edged up to 150 million", "label": "定位第 C 段" },
+        { "term": "almost tripled", "para": 3, "quote": "Its consumption almost tripled, from 70 million to 190 million barrels a day", "label": "定位第 D 段" },
+        { "term": "the sharpest rise of the four", "para": 3, "quote": "190 million barrels a day, the sharpest rise of the four", "label": "定位第 D 段" },
+        { "term": "less than a tenth of", "para": 3, "quote": "yet it still used less than a tenth of Nigeria's total", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

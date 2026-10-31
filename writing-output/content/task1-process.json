@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "id": "t1-process",
+      "task": "task1",
+      "cat": "process",
+      "catLabel": "流程图",
+      "catEn": "Process diagram",
+      "catNote": "流程图最容易写成流水账：用 first / second / next 一路数下去，把图翻译成时间线，却没说清整体是几个阶段、是单向还是闭环",
+      "order": 6,
+      "title": "铝罐回收的流程",
+      "titleEn": "The recycling process for aluminium cans",
+      "promptEn": "The diagram below shows the process by which aluminium drink cans are recycled.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "下图显示铝制饮料罐的回收流程。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>先数清图上有几个方框（阶段总数），再判断箭头的终点是不是回到起点——如果是，Overview 就必须说「这是一个循环」，而不只是「有六步」。主体段一律用被动语态，因为图上没有人在做事。",
+      "chart": {
+        "kind": "flow",
+        "caption": "The recycling process for aluminium drink cans",
+        "steps": [
+          { "label": "Collection", "detail": "used cans are collected from households and public recycling bins" },
+          { "label": "Sorting", "detail": "at the plant, cans are sorted by hand and contaminated items are removed" },
+          { "label": "Crushing", "detail": "the cans are crushed into flat sheets to reduce their volume" },
+          { "label": "Melting", "detail": "the crushed metal is melted down in a furnace" },
+          { "label": "Rolling", "detail": "the molten aluminium is poured into moulds and rolled into thin sheets" },
+          { "label": "Manufacturing", "detail": "the sheets are cut and shaped into new cans, which are filled and sold" }
+        ],
+        "note": "数据按考场回忆复原为示意流程，用于练结构，方框数量与措辞不保证与原卷一致。"
+      },
+      "tags": ["流程", "被动语态", "循环结构"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-09", "venue": "武汉大学深圳研究院雅思机考考点" },
+      "essay": [
+        {
+          "text": "The diagram illustrates the process by which aluminium drink cans are recycled, from the collection of used cans to the production of new ones.",
+          "gist": "开头：改写题目，只交代「什么流程、从哪到哪」，不提前复述步骤。"
+        },
+        {
+          "text": "Overall, the process involves six main stages, and it is cyclical rather than linear: the aluminium that leaves the plant as a new can is later collected again and fed back into the system, so the same material passes through the plant repeatedly.",
+          "gist": "概述：先给阶段总数，再定性「闭环」，并用一句话解释闭环是怎么形成的。"
+        },
+        {
+          "text": "Recycling begins when used cans are collected from households and public recycling bins. They are then delivered to a plant, where they are sorted by hand and any contaminated items are removed. The cans that pass this check are crushed into flat sheets, which reduces their volume and makes them easier to stack and transport.",
+          "gist": "细节段一：收集—运输—分选—压碎，把图上只是一条箭头的「运输」并进一句，不单独成句。"
+        },
+        {
+          "text": "In the next stage, the crushed metal is melted down in a furnace. The molten aluminium is poured into moulds and rolled into thin sheets, which are then cut and shaped into new cans. Once these have been filled and sold, they are used and collected again, completing the cycle.",
+          "gist": "细节段二：熔炼—成型—灌装，结尾回到收集环节，与 Overview 的「循环」呼应。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "六个阶段全部覆盖，且没有平均用力：运输一句带过，压碎和熔炼各给足信息。最关键的是 Overview 里 {{six main stages}} 和 {{cyclical rather than linear}} 同时出现——前者回答「几步」，后者回答「什么形状」，这两条正是流程图最显著的特征。只写其中一条，TA 就停在 6 分。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "全文只分两个主体段，按「前半程 / 后半程」切，而不是一步一段。段内靠 Recycling begins when、They are then、In the next stage、Once 四个标记推进，读者顺着物理顺序读，不需要自己数方框。若改成八句 first/second/next，句与句之间只有序号没有逻辑，CC 会掉。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "流程图的动词决定分数：{{are sorted by hand}} 说明是人工分选，{{is melted down}} 比 is heated 多出「变成液体」这一层，{{are crushed into flat sheets}} 连产物形状一起交代。三个动词都不是图上原词的照抄，而是对图的理解。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "通篇被动语态、统一一般现在时：are collected / are delivered / are crushed / is poured。主语始终是 cans 或 metal，动作执行者被自然隐去，这正是流程图需要的客观视角。另有两处 which 从句把「这一步的结果」挂回主句，句子不至于碎成电报体。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。保留了 from ... to ... 的起止框架，因为图上确实有明确的起点和终点，含糊说 shows the process 会丢掉信息。" },
+        { "n": "第 2 句", "d": "概述。冒号前给总数 {{six main stages}}，冒号后解释闭环——先定性再给理由，一句话完成两个任务，且不出现任何具体动词细节。" },
+        { "n": "第 3 句", "d": "第一步：收集。用 Recycling begins when 起段，既是时间起点也是段落起点，比 First 更有分量。" },
+        { "n": "第 4–5 句", "d": "运输与分选压成一句（delivered to a plant 顺带交代地点），再用 sorted by hand 和 contaminated items are removed 补出「分选在分什么」，这是图上文字没有明说的。" },
+        { "n": "第 6 句", "d": "压碎。加 which reduces their volume 解释「为什么要压」，把一步动作变成有因果的说明，而不是抄一个 crush。" },
+        { "n": "第 7–8 句", "d": "熔炼与成型。melted down → poured into moulds → rolled into thin sheets 三个动作严格按物理顺序排，顺序颠倒就是事实错误。" },
+        { "n": "第 9 句", "d": "收尾回环。Once these have been filled and sold 把「使用」这一环补上，再用 {{completing the cycle}} 与第 2 句的 cyclical 对接，全文首尾扣住。" }
+      ],
+      "lexis": [
+        { "w": "cyclical rather than linear", "m": "是循环的，而不是单向的", "note": "流程图 Overview 的核心判断词，比 it is a cycle 更像分析" },
+        { "w": "melted down", "m": "熔化（回收语境）", "note": "down 表示彻底消解，金属回收固定搭配，不能写成 melted" },
+        { "w": "poured into moulds", "m": "倒入模具", "note": "铸造环节的标准表达，moulds 是图上常出现的方框" },
+        { "w": "rolled into thin sheets", "m": "轧成薄板", "note": "把「roll」的结果写出来，避免只说 rolled" },
+        { "w": "contaminated items", "m": "受污染的物件", "note": "分选步骤的专用词，比 bad cans 精确" },
+        { "w": "completing the cycle", "m": "完成循环", "note": "结尾回扣 Overview 的分词短语，替代 In conclusion" }
+      ],
+      "grammar": [
+        "被动语态链：<code>are collected / are delivered / are sorted / are crushed</code> —— 主语始终是 cans，执行者不重要，这是流程图的标准语态；一旦写成 people collect，句子重心就跑到人身上了。",
+        "非限制性定语从句：<code>..., which reduces their volume and makes them easier to stack and transport</code> —— 把某一步的「目的/结果」挂回主句，比另起一句 so it reduces... 更紧凑，也避免重复主语。",
+        "once + 现在完成时：<code>Once these have been filled and sold, they are used and collected again</code> —— 强调「前一步彻底完成之后」才进入下一步，比 After they are filled 更能体现先后关系。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>流程图的 Overview 不能只报步数</strong>。写 six stages 只完成了「量」的部分，还必须判断这条流程是单向还是闭环——铝罐回到收集环节，所以 {{cyclical rather than linear}} 才是全文的信息核心。另一个常被忽略的点是「合并」：图上运输只是一根箭头，多数考生会给它单独一句，结果八句话里有两句几乎不携带信息。考官看的是你有没有替读者做过取舍。",
+      "pitfalls": [
+        "用 first / second / next / then 从头数到尾，八步八句。序号不是逻辑，读者读完只记住了顺序，不知道哪几步是一组。",
+        "写 people collect the cans、workers melt the metal，把客观流程写成有人称的记叙文，被动结构全丢，Grammatical Range 直接降档。",
+        "Overview 只写 The diagram shows how aluminium cans are recycled——这是改写题目，不是概述，Task Achievement 卡在 6。",
+        "把 melted down 写成 heated：加热不等于熔化，图上有 furnace 就必须写出金属变成液体这一层。"
+      ],
+      "keywords": [
+        { "term": "six main stages", "para": 1, "quote": "the process involves six main stages", "label": "定位第 B 段" },
+        { "term": "cyclical rather than linear", "para": 1, "quote": "it is cyclical rather than linear", "label": "定位第 B 段" },
+        { "term": "are sorted by hand", "para": 2, "quote": "where they are sorted by hand and any contaminated items are removed", "label": "定位第 C 段" },
+        { "term": "are crushed into flat sheets", "para": 2, "quote": "The cans that pass this check are crushed into flat sheets", "label": "定位第 C 段" },
+        { "term": "is melted down", "para": 3, "quote": "the crushed metal is melted down in a furnace", "label": "定位第 D 段" },
+        { "term": "completing the cycle", "para": 3, "quote": "they are used and collected again, completing the cycle", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

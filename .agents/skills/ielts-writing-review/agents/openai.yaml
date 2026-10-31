@@ -1,0 +1,4 @@
+interface:
+  display_name: "IELTS 写作数据接口"
+  short_description: "读取和保存写作提交及修订记录"
+  default_prompt: "使用 $ielts-writing-review 读取我的 IELTS Buddy 写作练习记录。"

@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "id": "t2-advdisadv",
+      "task": "task2",
+      "cat": "advdisadv",
+      "catLabel": "利弊类",
+      "catEn": "Advantages & disadvantages",
+      "catNote": "利弊类最常见的死法：利三条、弊三条，每条各占一句，读完全文不知道你到底站哪边。outweigh 问的是「哪边更重」，所以必须先给一把尺子，再用同一把尺子称两边。",
+      "order": 13,
+      "title": "城市功能分区：商铺、学校、办公与住宅彼此分开",
+      "titleEn": "Zoning shops, schools, offices and homes into separate areas",
+      "promptEn": "In many cities, planners tend to arrange shops, schools, offices and homes in specific areas and separate them from each other. Do you think the advantages outweigh the disadvantages?",
+      "promptZh": "许多城市的规划者把商铺、学校、办公区和住宅安排在各自的地块，彼此分开。你是否认为这样做利大于弊？<br><b>任务要求：</b>回答 advantages 是否 outweigh disadvantages，并给出理由和例子。<br><b>写之前先想清楚：</b>outweigh 要的是<b>比较</b>，不是列举。先定一个衡量标准，例如「对多数人的日常时间成本影响更大的是哪一边」——也可以拆细：好处落到多少人身上，能不能不增加一次通勤就拿到同样的效果。标准定了，结论才有依据。",
+      "tags": ["城市", "利弊权衡", "衡量标准"],
+      "minutes": 40,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-21", "venue": "郑州轻工业大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "Planners in many cities keep shops, schools, offices and housing in separate districts, assuming each use works best among its own kind. The arrangement has benefits, but its drawbacks are heavier, judged against one test: whether a gain reaches most residents, and whether it could be had without a daily journey.",
+          "gist": "开头：改写题目 + 亮立场，并且当场给出衡量标准，后面每一段都围着这把尺子转。"
+        },
+        {
+          "text": "The case for separation rests on friction between uses. Offices and shops bring delivery lorries, late-night noise and crowded pavements, and those who absorb the disturbance are people at home by day — small children, the elderly, parents on leave — who can least easily move away. Keeping such traffic on a few arterial roads protects the streets behind them, and a child can then walk to school without crossing a commercial junction.",
+          "gist": "利的一段：先说机制（用途之间有摩擦），再指出受损的是最走不开的人，最后给出具体手段（主干道）。"
+        },
+        {
+          "text": "The cost is distance, and distance is paid every day. A parent may drive a child to school, come home, then cross the city to an office; anyone without a car, or on a shift that starts before buses run, pays in hours rather than minutes. Something social goes too: the baker, the corner shop and the queue at the bus stop are what make a street feel watched over, and a district that empties at six has none of them.",
+          "gist": "弊的一段：把「距离远」翻译成每天的时间支出，再补一层非经济的损失——街道不再有人看着。"
+        },
+        {
+          "text": "Set against this, the advantage shrinks, because quiet has cheaper substitutes. The nuisance can be designed away: fixed delivery windows, tree belts along main roads and shops with flats above would remove most of it without adding a single commute. Time lost to distance, by contrast, cannot be recovered once the layout is built.",
+          "gist": "称重段：不重复利弊，而是比较「同样的安静还有没有更便宜的买法」，并把不可逆性摆出来。"
+        },
+        {
+          "text": "Zoning therefore fails both halves of my test. Its benefit reaches a minority and could be secured by cheaper means, while its cost falls on nearly everyone, every day. Planners would do better to mix uses and manage the friction between them.",
+          "gist": "结论：用开头的同一把尺子宣判，最后半句给替代方案，避免结尾只剩 repeat。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Response",
+          "v": "7.5",
+          "p": "outweigh 被当成一个比较题处理：开头用 {{judged against one test}} 立标准，第四段用「同样的效果能否更便宜地买到」去称，第五段回收。注意利的那段写得也不弱——写弱了，说「弊更大」就没有说服力，这是 6 分和 7 分在这一题型上的分水岭。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "正文四段的分工是「立尺—称利—称弊—比较」，不是「利一、利二、弊一、弊二」。第五段的 {{fails both halves of my test}} 直接把标准拆成两半逐条回应，段落之间因此是推进关系而不是并列关系。若换成 On the one hand / On the other hand 开头，段落会立刻变成清单。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "好处不用 advantages，而是具体到 {{arterial roads}} 这类设计手段；坏处不用 problems，而说 {{pays in hours rather than minutes}}，把抽象的「远」换算成可感的单位。{{feel watched over}} 是口语里常见的说法，放进学术句子里反而比 surveillance 自然。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "第二段用破折号名单（small children, the elderly, parents on leave）补足 those who absorb the disturbance，主干不被切断；第四段 without adding a single commute 是介词短语表条件，比 if we did not add a commute 短一半。全文没有一句超过 40 词，复杂句都控制在读者能一次读完的长度。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 段", "d": "两句完成开头：第一句改写题目（keep ... in separate districts 替 arrange ... in specific areas），第二句给立场加标准。利弊类开头最忌「Both sides have merits, this essay will discuss」，那等于宣布不回答。" },
+        { "n": "第 2 段第 1 句", "d": "The case for separation rests on friction between uses —— 先立机制再举例。有机制的段落，考官看到的是「你懂城市怎么运转」，而不是「你背了安静和安全两个词」。" },
+        { "n": "第 2 段第 2 句", "d": "把受损方具体化为白天在家的人。这一步让利变得可争辩：如果受损的是最走不开的人，分区就有伦理上的理由。" },
+        { "n": "第 2 段第 3 句", "d": "{{arterial roads}} 是落实手段，回答「利究竟怎么产生的」。只写 keeps the area quiet 是结论，写把车流集中到几条主干道才是解释。" },
+        { "n": "第 3 段第 1–2 句", "d": "转折后立刻把 distance 换算成时间：送学—回家—跨城上班，三段动作就是论证。任何人没有车、上早班，都在这条链上付账。" },
+        { "n": "第 3 段第 3 句", "d": "补一层非经济成本。{{feel watched over}} 让「社区感」不流于抒情，因为它给的是可观察的画面：面包店、街角小店、公交站的队伍。" },
+        { "n": "第 4 段", "d": "全篇最关键的一段：不新增论点，而是给利定价。{{fixed delivery windows}} 与「楼下商铺、楼上住宅」说明「安静」有更便宜的买法；末句指出时间成本不可逆，比较就完成了。" },
+        { "n": "第 5 段", "d": "结论把标准拆成两半逐条判定，再用 {{manage the friction between them}} 给出方向。没有 introduce 任何新信息，但比复述多走了一步。" }
+      ],
+      "lexis": [
+        { "w": "friction between uses", "m": "不同用途之间的摩擦", "note": "比 conflict 温和、比 problems 具体，城市类话题通用" },
+        { "w": "arterial roads", "m": "城市主干道", "note": "写交通分流时的准确名词，比 main roads 专业" },
+        { "w": "pays in hours rather than minutes", "m": "付出的是小时而不是分钟", "note": "把抽象成本换算成时间单位的写法，可迁移到通勤、排队、看病" },
+        { "w": "feel watched over", "m": "（街道）有人看着、有照应", "note": "描述社区安全感的自然表达，避免 surveillance 的监控味" },
+        { "w": "fixed delivery windows", "m": "固定的送货时段", "note": "政策类具体手段，写作时比 regulations 有信息量" },
+        { "w": "mix uses", "m": "混合功能（住宅与商业混在一起）", "note": "城市规划术语，colocation 的动词化说法" }
+      ],
+      "grammar": [
+        "插入语补充：<code>those who absorb the disturbance are people at home by day — small children, the elderly, parents on leave — who can least easily move away</code> —— 两层定语不堆在主干上，破折号里的名单可以整块拿走，句子仍然成立。",
+        "分词/介词短语表条件：<code>without adding a single commute</code> —— 等于 and this would not add a commute，但短一半，适合比较句。",
+        "名词化主语：<code>The cost is distance, and distance is paid every day</code> —— 用重复名词做衔接，比 However, this has disadvantages 更有推进感。"
+      ],
+      "examiner": "最容易被忽略的一点是：<strong>这篇的「利」写得比「弊」短，却并不弱</strong>。很多考生以为要论证弊大于利，就得把利写得敷衍，结果整篇变成单方面控诉，考官反而判定没有真正 engage 题目。这里利的一段给了机制、受损人群和具体手段，正因为它站得住，第四段「安静可以更便宜地买到」才构成真正的比较——<strong>称重的前提是两边都上秤</strong>。另一个细节：结论没有说 disadvantages are more serious，而是说它没过我自己设的两条，标准前后一致，这才是 outweigh 题拿 7.5 的方式。",
+      "pitfalls": [
+        "把 advantages 和 disadvantages 各写三条，每条一句，段末加一句 However, I think disadvantages are more. 这是 6 分模板，TR 卡在 6，因为没有任何一条被真正展开。",
+        "开头不设标准，直接 In my opinion, the disadvantages outweigh the advantages. 立场有了，但读者不知道为什么「更重」，后面三段就变成自说自话。",
+        "把 zoning 写成「工厂和住宅分开」。题目给的是 shops, schools, offices and homes，换成工业区就跑题，TR 会因 off-topic 掉到 6 以下。",
+        "结论换一把尺子。前面按「多数人受益」比，结尾突然说「而且这样更环保」，等于承认原来的论证不够，考官会读成思路不稳。"
+      ],
+      "keywords": [
+        { "term": "judged against one test", "para": 0, "quote": "its drawbacks are heavier, judged against one test: whether a gain reaches most residents", "label": "定位第 A 段" },
+        { "term": "arterial roads", "para": 1, "quote": "Keeping such traffic on a few arterial roads protects the streets behind them", "label": "定位第 B 段" },
+        { "term": "pays in hours rather than minutes", "para": 2, "quote": "pays in hours rather than minutes", "label": "定位第 C 段" },
+        { "term": "feel watched over", "para": 2, "quote": "are what make a street feel watched over", "label": "定位第 C 段" },
+        { "term": "fixed delivery windows", "para": 3, "quote": "fixed delivery windows, tree belts along main roads and shops with flats above", "label": "定位第 D 段" },
+        { "term": "fails both halves of my test", "para": 4, "quote": "Zoning therefore fails both halves of my test.", "label": "定位第 E 段" },
+        { "term": "manage the friction between them", "para": 4, "quote": "Planners would do better to mix uses and manage the friction between them.", "label": "定位第 E 段" }
+      ]
+    }
+  ]
+}

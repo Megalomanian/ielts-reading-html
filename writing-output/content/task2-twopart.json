@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "id": "t2-twopart",
+      "task": "task2",
+      "cat": "twopart",
+      "catLabel": "两问类",
+      "catEn": "Two-part question",
+      "catNote": "两问类最容易犯的错：只回答第二问，或者把两个问句塞进一段各写两句，结果两笔账都还得浅。",
+      "order": 15,
+      "title": "为什么有人比别人更努力，努力一定是好事吗",
+      "titleEn": "Why do some people work harder, and is it always a good thing?",
+      "promptEn": "In education and employment, some people work harder than others. Why do some people work harder? Is it always a good thing to work hard?",
+      "promptZh": "题目给了一个现象（有人更努力），然后问两件事：<b>为什么</b>，以及<b>努力是否总是好事</b>。<br><b>任务要求：</b>两个问句都要正面回答，且都要有支撑。<br><b>写之前先想清楚：</b>两个问句是两笔独立的欠账——第一问要的是原因，第二问要的是评价（是否总是），不能用一个论点同时回答。也不要在第一问里堆三个原因、每个只写一句，那是把「两问」写成了「一问加一句感想」。",
+      "chart": null,
+      "tags": ["两问类", "原因+评价", "教育与职场"],
+      "minutes": 40,
+      "band": "7.5+",
+      "exam": { "date": "2026-09-21", "venue": "伦敦机考中心" },
+      "essay": [
+        {
+          "text": "In every school and workplace, some people consistently invest more effort than those around them. This essay first considers why that difference arises, and then argues that hard work is beneficial only when it is directed and sustainable.",
+          "gist": "开头：先立现象，再用一句预告两问的处理顺序。不表态，也不提前把结论说完。"
+        },
+        {
+          "text": "The most obvious explanation is that effort is priced. In many companies, promotion and bonuses depend on visible output, so employees who want a higher income or a more secure position rationally work longer hours. Education works similarly: students competing for scarce university places respond to a system in which a better grade converts into a better opportunity. Where reward and effort are tightly linked, hard work is the cheapest route to advancement.",
+          "gist": "原因一（外在激励）：努力有价格，职场用晋升与收入定价，教育用升学机会定价，条件句收束。"
+        },
+        {
+          "text": "Reward, however, explains only part of it. Some people work hard because their sense of professional identity will not allow them to submit anything second-rate. A teacher who rewrites a lesson plan at midnight is not chasing a bonus; the standard has been internalised, and falling short of it feels like a personal failure. This perfectionism is a motive distinct from ambition, and it survives when nobody is watching.",
+          "gist": "原因二（内在标准）：职业认同与完美主义，用教师改教案的具体画面支撑，明确与「想要奖励」区分开。"
+        },
+        {
+          "text": "Yet hard work is not automatically good. Beyond a certain point, extra hours bring diminishing returns: a tired employee makes mistakes that a rested one avoids, and a student who studies until three in the morning retains less than one who stops at eleven. Chronic overwork also damages health. More subtly, effort can become an end in itself, so that people judge themselves by hours spent rather than by what those hours achieve; at that point diligence works against the goals it was meant to serve.",
+          "gist": "评价段：先否定「总是」，再给三条边界——边际递减、健康代价、把努力本身当目的。"
+        },
+        {
+          "text": "In short, people work hard for external reward and for internal standards, but the value of that effort depends on what it produces and what it costs them.",
+          "gist": "结尾：两问各收一句，用「产出与代价」给出判断标准，不喊口号。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Response",
+          "v": "7.5",
+          "p": "两问各有一笔清楚的账：第 2 段用 {{effort is priced}} 解释外在激励，第 3 段用 {{professional identity}} 解释内在标准，两条原因性质不同，所以第一问不是把同一句话说两遍。第二问没有停在「有好处也有坏处」，而是用 {{diminishing returns}} 和 {{an end in itself}} 说清「从哪一刻起不再划算」，正面回答了 always 这个词。开头那句 {{directed and sustainable}} 提前把这两个标准摆出来，所以第 4 段的三条边界不是临时凑的，而是兑现开头的承诺。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "五段的顺序就是题目的问句顺序：现象 → 原因一 → 原因二 → 评价 → 收束。第 3 段开头 however 是关键信号，它告诉读者「换的是原因的类型，不是再加一个原因」；第 4 段用 Beyond a certain point、More subtly 层层推进，而不是并列罗列。若把两问压进一段，连接词就会从「推进」退化成 and also，读者分不清哪里是回答哪一问。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "词汇集中在一个语义场里：priced、cheapest route、diminishing returns、costs，都在谈「划算不划算」，所以读起来是一篇有统一视角的文章，不是好词拼盘。{{the cheapest route to advancement}} 比 the easiest way to succeed 多一层成本含义，正好服务第一问的经济解释；<code>second-rate</code> 这种带评价的形容词也比 not good 更能体现「内在标准」。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "第 3 段 {{has been internalised}} 用现在完成被动，强调标准已经变成一种内部状态，而不是谁在要求；第 2 段 Where reward and effort are tightly linked 用 where 引导条件，等于 in cases where，比 if 更书面。全文没有一句超过 45 词的失控长句，复杂句都控制在能一次读懂的长度。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 段", "d": "两句分工：第一句立现象（有人投入更多），第二句交代文章怎么处理两个问句。注意它没有写 This essay will discuss both views，因为这不是 discuss both views 题。" },
+        { "n": "第 2 段第 1 句", "d": "{{effort is priced}} 一句立论，把「为什么更努力」直接翻译成「努力有价格」，后面两句都只是给这个隐喻补证据。" },
+        { "n": "第 2 段第 2–3 句", "d": "职场与教育各一例，证明同一机制在两个场域都成立。只写公司会显得眼界窄，只写学生会漏掉 employment 这个词。" },
+        { "n": "第 2 段第 4 句", "d": "条件句收束：只有奖励与努力挂钩时，努力才是最便宜的路。加上这层条件，原因才不是绝对化的「人都贪财」。" },
+        { "n": "第 3 段第 1 句", "d": "however 转折，明确「钱只解释一部分」，把第二类原因单独起段。这一句是两问之外、第一问内部的分层信号。" },
+        { "n": "第 3 段第 3 句", "d": "教师半夜改教案的具体画面，替代 hard-working、dedicated 这类形容词；后半句 the standard has been internalised 点明标准来自内部。" },
+        { "n": "第 4 段", "d": "评价段的骨架：先否定 always（not automatically good），再按「产出递减 → 健康 → 目的置换」三层加深，最后一层最抽象也最致命，放在段尾。" },
+        { "n": "第 5 段", "d": "结尾不重复两个原因，只把它们压成 external reward / internal standards 两个短语，然后用 depends on what it produces and what it costs 交出判断标准。" }
+      ],
+      "lexis": [
+        { "w": "effort is priced", "m": "努力是被标价的", "note": "把经济激励压成三个词，比 people work hard for money 更像分析而不是陈述" },
+        { "w": "the cheapest route to advancement", "m": "通往晋升最省钱的一条路", "note": "route to + 名词，比 way to succeed 精确，因为它谈的是成本" },
+        { "w": "second-rate", "m": "二流的、拿不出手的", "note": "形容作品时比 not good 具体，且自带评价者的标准" },
+        { "w": "has been internalised", "m": "已经被内化", "note": "说明标准来自内部，与 promotions and bonuses 形成对照" },
+        { "w": "diminishing returns", "m": "边际产出递减", "note": "经济学固定搭配，用来给「努力」设一个临界点，比自己编的说法可靠" },
+        { "w": "an end in itself", "m": "自身即目的", "note": "手段被当成目的，正是第二问「不总是好事」的核心机制" }
+      ],
+      "grammar": [
+        "现在完成被动：<code>the standard has been internalised</code> —— 不点明是谁内化的，把重点放在「标准已变成状态」，适合解释动机。",
+        "where 引导条件：<code>Where reward and effort are tightly linked, ...</code> —— 等于 in cases where，比 if 书面，且天然带「在哪些情况下」的限定意味。",
+        "so that 引出后果 + rather than 对照：<code>so that people judge themselves by hours spent rather than by what those hours achieve</code> —— rather than 两边都是介词短语，结构平行，读起来不别扭。"
+      ],
+      "examiner": "这篇最容易被忽略的判断在第 4 段：它没有把第二问做成「好处一段、坏处一段」的利弊清单。题目问的是 is it always a good thing，always 要的是边界，不是两边各让一步。所以这一段先承认 {{diminishing returns}}，再补健康代价，最后用 {{an end in itself}} 指出努力从手段变成了目的——三条都在回答「什么时候这个说法不成立」。反过来，写 on the one hand it brings success, on the other hand it causes stress 的考生看上去很平衡，实际上始终没碰 always，Task Response 通常卡在 6。",
+      "pitfalls": [
+        "只回答第二问。第一问用 people work hard because they want to succeed 一句带过，等于主动放弃一半任务，TR 很难上 6。",
+        "两问合成一段，各写两句。表面上面面俱到，实际上两个原因都没展开、评价也没给条件，是最典型的「都浅」。",
+        "两个原因其实是一个原因：既写「想赚钱」又写「想成功」，本质都是外在回报，读者会觉得第 3 段是第 2 段的复述。",
+        "第二问写成利弊清单却不回答 always。列出三个好处三个坏处，但没有说清「到哪一步就不再是好事」，仍然算没答完。",
+        "结尾喊口号：so we should work hard and also take care of our health。这是建议，不是对「是否总是好事」的判断。"
+      ],
+      "keywords": [
+        { "term": "directed and sustainable", "para": 0, "quote": "hard work is beneficial only when it is directed and sustainable", "label": "定位第 A 段" },
+        { "term": "effort is priced", "para": 1, "quote": "The most obvious explanation is that effort is priced", "label": "定位第 B 段" },
+        { "term": "the cheapest route to advancement", "para": 1, "quote": "hard work is the cheapest route to advancement", "label": "定位第 B 段" },
+        { "term": "professional identity", "para": 2, "quote": "their sense of professional identity will not allow them to submit anything second-rate", "label": "定位第 C 段" },
+        { "term": "has been internalised", "para": 2, "quote": "the standard has been internalised", "label": "定位第 C 段" },
+        { "term": "diminishing returns", "para": 3, "quote": "Beyond a certain point, extra hours bring diminishing returns", "label": "定位第 D 段" },
+        { "term": "an end in itself", "para": 3, "quote": "effort can become an end in itself", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

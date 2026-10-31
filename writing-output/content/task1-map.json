@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "id": "t1-map",
+      "task": "task1",
+      "cat": "map",
+      "catLabel": "地图",
+      "catEn": "Map",
+      "catNote": "按方位把所有建筑罗列一遍，却不写「这里原来是什么、现在变成了什么」——地图题考的是变化，不是方位听写",
+      "order": 5,
+      "title": "一座海滨城镇 1985 年与现在的布局",
+      "titleEn": "A coastal town in 1985 and today",
+      "promptEn": "The two maps below show the layout of a coastal town in 1985 and the same town today.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "两幅图分别显示同一座海滨城镇在 1985 年与今天的布局。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>先把两幅图逐区对一遍，标出「没动」「换了用途」「新出现」三类，再决定 Overview 的那一句话——它应该说出这座镇子性质上的变化（渔村 → 度假地），而不是「北边有草地、南边有农田」。<br><b>题目来源：</b>2026-10-30 深圳大学雅思机考考点（回忆：「什么 park 的 2010 到现在的变化」）；另 2026-10-16 北京师范大学-香港浸会大学联合国际学院考点（回忆：「地图题，写一个海滩区域从 1950 年和现在的变化」）。两图据此合成。",
+      "chart": {
+        "kind": "map",
+        "caption": "A coastal town in 1985 and today",
+        "panes": [
+          {
+            "title": "1985",
+            "zones": [
+              { "zone": "North", "state": "open grassland on a headland, with a cliff path" },
+              { "zone": "Harbour (west)", "state": "fishing harbour, stone harbour wall and boat sheds" },
+              { "zone": "Centre", "state": "fish market, small cottages, one narrow road" },
+              { "zone": "Eastern edge", "state": "sand dunes and marshland" },
+              { "zone": "South", "state": "farmland, reached by a single beach track" }
+            ]
+          },
+          {
+            "title": "Today",
+            "zones": [
+              { "zone": "North", "state": "open grassland and cliff path, unchanged" },
+              { "zone": "Harbour (west)", "state": "marina for pleasure boats; stone harbour wall kept, boat sheds replaced by cafes" },
+              { "zone": "Centre", "state": "pedestrian shopping street and two hotels" },
+              { "zone": "Eastern edge", "state": "beach resort with a swimming pool and apartment blocks" },
+              { "zone": "South", "state": "built-up area with a coastal road along the shore" }
+            ]
+          }
+        ],
+        "note": "布局按两条考场回忆（公园改造 / 海滩区域今昔）合成示意，用于练「变与不变」的组织顺序，不保证与原卷一致。"
+      },
+      "tags": ["今昔对比", "空间顺序", "保留未变"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-30", "venue": "深圳大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "The two maps show how a coastal town and its seafront have changed between 1985 and the present day.",
+          "gist": "开头：改写题目，只交代「同一地方、两个时间、看的是布局」。"
+        },
+        {
+          "text": "Overall, the town has been transformed from a small fishing village into a holiday resort. Most of the working waterfront has been converted to tourist use, although the headland in the north and the old harbour wall have been left untouched.",
+          "gist": "概述：先给性质判断（渔村变度假地），再用一句点出「也有没动的」，为下文埋伏笔。"
+        },
+        {
+          "text": "The northern headland has changed least: the open grassland and the cliff path along its edge are still there, as they were in 1985. The stone harbour wall below also survives, but the boat sheds have gone, replaced by cafes overlooking a marina where fishing boats once moored.",
+          "gist": "细节段一：先写不变的（岬角、崖边小路、石砌码头墙），再写同一区域里变的部分，形成一保留一替换的对照。"
+        },
+        {
+          "text": "Elsewhere the transformation is complete. The fish market and cottages in the centre have given way to a pedestrian shopping street and two hotels, while the dunes and marshland on the eastern edge now hold a beach resort with a swimming pool and apartment blocks. In the south, farmland has been built over, and a coastal road follows the shoreline, so the beach is far easier to reach than it was by the single track of 1985.",
+          "gist": "细节段二：按中心 → 东 → 南推进，每处都写「原来是 A，现在是 B」，结尾用交通可达性收束全篇的变化逻辑。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "Overview 没有罗列方位，而是给出性质判断：{{has been transformed from}} a fishing village into a holiday resort。这一句把 {{working waterfront}}、中心商业街、东侧度假村三处改造统一起来，读者不用看细节也知道小镇发生了什么。细节段覆盖了五个区域中的全部变化，并明确写出北岬与码头墙 {{have been left untouched}}——地图题必须交代「没变的部分」，否则等于漏了一半信息。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "段落切分依据是「变 / 不变」，不是「北 / 南」：第 3 段留在北侧与港口，因为那里有唯一没动的东西；第 4 段用 Elsewhere 转到全面改造的区域。段内再用 below、In the south 做局部定位。如果按方位从北到南五个区域各一句，读者得到的是方位听写，而不是一段有因果的改造史。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "变化动词分了三档：{{have given way to}} 是整体让位，have been converted to 是改用途，have been built over 是被建筑覆盖。地图题的动词如果只有 built / removed，五处变化会读起来一模一样。{{where fishing boats once moored}} 用一个定语从句把「原来是什么」塞进「现在是什么」的句子里，避免每处都写成两句。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "被动语态是地图题的主干（have been transformed / has been built over），因为变化的主体是地方而不是人。过去分词短语 replaced by cafes overlooking a marina 直接接在前句的 boat sheds 后面，省掉 and they were，再用现在分词补出「咖啡馆看的是游艇码头」这层新信息，一句承载两次变化。结尾 so the beach is far easier to reach than it was 用比较结构把改造结果讲成后果，而不是再加一条事实。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。用 the present day 对应地图上的 today，避免整篇反复出现 today 显得口语。" },
+        { "n": "第 2 句", "d": "Overview 主句：{{has been transformed from}} fishing village into holiday resort，一句定性，这是全篇最重要的一句。" },
+        { "n": "第 3 句", "d": "Overview 补充：working waterfront 被改成旅游用途，但北岬与码头墙 {{have been left untouched}}。用 although 把「变」与「不变」放进同一句。" },
+        { "n": "第 4 句", "d": "细节段一开头先写不变：草地、崖边小路 are still there, as they were in 1985，为后面的替换提供参照点。" },
+        { "n": "第 5 句", "d": "同一区域里的变：码头墙 survives，船棚 have gone，replaced by cafes overlooking a marina where fishing boats once moored。一句里同时有「留」和「换」。" },
+        { "n": "第 6 句", "d": "转入全面改造区。Elsewhere the transformation is complete 是一个总起句，让读者知道接下来不必再找「没变」的东西。" },
+        { "n": "第 7 句", "d": "中心与东侧：市场、农舍 {{have given way to}} 步行街与酒店；沙丘湿地 now hold 度假村。while 把两处并列。" },
+        { "n": "第 8 句", "d": "南部农田 {{has been built over}}，沿海公路取代土路。so 引出可达性提升，把布局变化翻译成使用体验的变化。" }
+      ],
+      "lexis": [
+        { "w": "has been transformed from", "m": "由……转变为……（be transformed from A into B）", "note": "Overview 定性句的骨架，比 changed a lot 具体得多" },
+        { "w": "have been left untouched", "m": "保持原样、未被改动", "note": "写「保留未变」的固定表达，地图题必备" },
+        { "w": "have given way to", "m": "让位于、被……取代", "note": "旧功能整体消失时用，比 be replaced by 更有画面" },
+        { "w": "has been built over", "m": "被建筑物覆盖", "note": "农田、空地变成建成区时最准确，不能说 be built" },
+        { "w": "once moored", "m": "曾经停泊", "note": "once + 过去式，专门用来指「旧用途已不存在」" },
+        { "w": "working waterfront", "m": "仍在作业的滨水区（渔港、码头一带）", "note": "把 harbour 与 tourism 的对立一次说清的名词短语" }
+      ],
+      "grammar": [
+        "现在完成时的被动：<code>has been transformed / has been built over</code> —— 地图题的变化主体是地点，被动比主动自然，完成时表明「到现在为止已经完成」。",
+        "过去分词状语接续：<code>replaced by cafes overlooking a marina</code> —— 省掉 and they were，一句话接上前面刚提到的 boat sheds，句子不散。",
+        "定语从句压缩旧信息：<code>a marina where fishing boats once moored</code> —— 现在的地点是 marina，旧用途放在从句里，避免写成两句对比句。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>地图题的 Overview 应该写「地方的性质变了」，而不是「哪些建筑变了」</strong>。fishing village → holiday resort 是性质；boat sheds → cafes 只是证据。很多考生把 Overview 写成「北边有草地，中间有商店，南边有公路」，那是描述现状，不是概述变化，TA 直接停在 6。另一个加分点在第 3 段：先写没动的东西再写动的，读者才有坐标；只写变化会让整篇读起来像拆迁清单。",
+      "pitfalls": [
+        "五个区域按北→南各写一句，每句只说「现在是什么」，不说「原来是什么」，全文没有一处对照，等于只描述了第二幅图。",
+        "漏掉「没变」的部分。北岬草地、崖边小路、码头墙三处保留是本图的隐藏考点，不写会被判为 coverage 不全。",
+        "时态混用：1985 的内容用现在时（the harbour is full of fishing boats），今天的内容用过去时，读者分不清哪幅图。",
+        "把地图写成游记：The town is beautiful and tourists can enjoy the beach。地图题不需要评价和推测，只需要变化和位置。"
+      ],
+      "keywords": [
+        { "term": "has been transformed from", "para": 1, "quote": "the town has been transformed from a small fishing village into a holiday resort", "label": "定位第 B 段" },
+        { "term": "have been left untouched", "para": 1, "quote": "the headland in the north and the old harbour wall have been left untouched", "label": "定位第 B 段" },
+        { "term": "have given way to", "para": 3, "quote": "The fish market and cottages in the centre have given way to a pedestrian shopping street", "label": "定位第 D 段" },
+        { "term": "has been built over", "para": 3, "quote": "In the south, farmland has been built over", "label": "定位第 D 段" },
+        { "term": "where fishing boats once moored", "para": 2, "quote": "a marina where fishing boats once moored", "label": "定位第 C 段" },
+        { "term": "working waterfront", "para": 1, "quote": "Most of the working waterfront has been converted to tourist use", "label": "定位第 B 段" }
+      ]
+    }
+  ]
+}

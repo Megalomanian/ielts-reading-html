@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "id": "t1-static",
+      "task": "task1",
+      "cat": "static",
+      "catLabel": "静态比较",
+      "catEn": "Static comparison",
+      "catNote": "没有时间轴的图最容易犯的错是硬套 increased / decreased：图上只有一个年份，任何「上升、下降」都是凭空编的，写出来就是事实错误",
+      "order": 8,
+      "title": "五个国家的自雇比例",
+      "titleEn": "The proportion of self-employed workers in five countries",
+      "promptEn": "The chart below shows the percentage of workers who were self-employed in five countries in 2021.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "柱状图显示 2021 年五个国家（希腊、意大利、韩国、德国、挪威）的自雇劳动者占全部就业者的比例，只有一个时间点。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>没有第二个年份，就没有趋势可写。全文只能用「谁高谁低、差几倍、谁和谁挤在一起」这类横向比较，Overview 要给的是梯队划分，不是「都发生了变化」。",
+      "chart": {
+        "kind": "bar",
+        "caption": "Percentage of self-employed workers in five countries, 2021",
+        "unit": "%",
+        "categories": ["Greece", "Italy", "South Korea", "Germany", "Norway"],
+        "series": [
+          { "name": "Self-employed (%)", "values": [34, 24, 23, 10, 7] }
+        ],
+        "note": "数据按考场回忆复原为示意数据，用于练结构，不保证与原卷一致。"
+      },
+      "tags": ["静态比较", "梯队", "单时间点"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-24", "venue": "无锡开放大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "The bar chart compares the proportion of workers who were self-employed in five countries in 2021: Greece, Italy, South Korea, Germany and Norway.",
+          "gist": "开头：改写题目，把五个国家点名，并锁定 2021 这个唯一时间点。"
+        },
+        {
+          "text": "Overall, the five countries can be grouped into three distinct tiers. Greece occupies the top tier on its own, Italy and South Korea share a middle tier, and Germany and Norway sit at the bottom, with the highest figure almost five times the lowest.",
+          "gist": "概述：不复述数字，直接给「三个梯队」这个结构判断，并用最高与最低的倍数关系说明差距有多大。"
+        },
+        {
+          "text": "Greece has by far the highest share, at 34%, which means that roughly one worker in three is self-employed. Italy and South Korea form the middle tier, at 24% and 23% respectively. The one-point difference between them is negligible, so they are better treated as a pair than ranked against each other.",
+          "gist": "细节段一：最高梯队与中间梯队。把意大利和韩国明确处理成一组，而不是硬分高下。"
+        },
+        {
+          "text": "At the other end, Germany stands at 10% and Norway at 7%, both less than a third of the Greek figure. The gap between Italy and Germany, at 14 percentage points, is actually wider than the ten points separating Greece from Italy, which is why the chart reads as three steps rather than a gentle spread.",
+          "gist": "细节段二：最低梯队，并用「两段间隔差不多宽」反过来验证第一段的梯队判断。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "五个国家全部覆盖，但没有平铺。真正拿分的是 {{three distinct tiers}} 这个判断：它把五个孤立数字压成三层结构，并且后文用倍数和间隔去验证它，而不是先断言再各报各的。如果只写 Greece is the highest and Norway is the lowest，覆盖是够了，Overview 仍然是 6 分水平。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "细节段按梯队切，不按国家顺序切——先最高加中间，再最低，末尾用两段间隔的对比把三层结构闭合。如果按 Greece→Italy→Korea→Germany→Norway 顺着图念，段落内部就没有组织原则，读者只能自己找规律，CC 停在 6。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "静态图的动词要「不动」：{{has by far the highest share}}、{{stands at}}、{{form the middle tier}}、occupies，全是状态动词，没有一个暗示变化。{{negligible}} 用来否定 24 与 23 的差别，比 very small 更专业，也顺势解释了为什么要合并成一组；末段用 {{a gentle spread}} 与 three steps 对照，才能把「差距不均匀」这层判断说清。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "倍数结构 {{almost five times the lowest}} 和 less than a third of the Greek figure 是静态比较最有效的两种句式，逼着读者做换算而不是念数。末句的 which is why 从句把「间隔相等」这个观察直接升格为结论，一句里完成证据和判断。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。五个国家按图上的顺序点名，2021 必须出现——它是判断「静态」的依据，漏掉这个年份，后面任何趋势词都会显得可疑。" },
+        { "n": "第 2 句", "d": "概述第一层：{{three distinct tiers}}。这是全篇的骨架，后面两段都在为它提供证据。" },
+        { "n": "第 3 句", "d": "概述第二层：点名各梯队成员，再给倍数。almost five times 让「差距大」变成可验证的表述，而不是形容词。" },
+        { "n": "第 4 句", "d": "最高值。by far 限定 34 与 24 之间的真实差距，后面用 one worker in three 做换算，读者立刻有量感。" },
+        { "n": "第 5–6 句", "d": "中间梯队。先给两个数字，再主动说明「一分之差可以忽略」，把「合并成一组」的理由写出来——这一步是梯队论证成立的关键。" },
+        { "n": "第 7 句", "d": "最低梯队。stands at 保持静态，less than a third of the Greek figure 与开头的倍数呼应，避免重复同一个换算。" },
+        { "n": "第 8 句", "d": "收口。比较两段间隔的宽度，反过来证明「三个台阶」不是强行分类，全文的结构判断在这里闭环。" }
+      ],
+      "lexis": [
+        { "w": "fall into three distinct tiers", "m": "分成三个清晰的梯队", "note": "静态比较里替代 are different 的结构性表达，一句话定性" },
+        { "w": "occupy the top tier", "m": "占据最高梯队", "note": "比 is the highest 多出「层级」概念，适合单独领跑的数据" },
+        { "w": "stand at", "m": "（数值）处于", "note": "静态数据专用动词，绝不能换成 rose to / fell to" },
+        { "w": "negligible", "m": "可忽略不计的", "note": "解释为什么两个接近的数字应当合并成一组，比 very small 有判断力" },
+        { "w": "less than a third of", "m": "不到……的三分之一", "note": "分数式比较，比 10% versus 34% 更能传达量级差" },
+        { "w": "a gentle spread", "m": "平缓的分布", "note": "与 three steps 对照，用来否定「差距均匀」这种误读" }
+      ],
+      "grammar": [
+        "倍数表达：<code>almost five times the lowest</code> / <code>less than a third of the Greek figure</code> —— 静态图比较量级的标准句式，比 The figure is much bigger 精确得多。",
+        "非限制性定语从句：<code>Greece has by far the highest share, at 34%, which means that roughly one worker in three is self-employed</code> —— which 指代前面整个事实，顺势完成换算，不用另起一句。",
+        "so 引导的结果分句：<code>The one-point difference ... is negligible, so they are better treated as a pair</code> —— 把观察和结论压进一句，同时用被动说明「怎么处理数据」这一层元信息。"
+      ],
+      "examiner": "这篇最容易被忽略的判断是：<strong>意大利 24% 和韩国 23% 之间的那一分，应该被主动放弃</strong>。多数考生会觉得「两个数都写了才叫完整」，于是硬写 Italy is higher than South Korea，读者反而以为这个差距有意义。{{negligible}} 这个词的作用不是省字，而是告诉考官你分得清「数据差异」和「有意义的差异」。另外注意全文没有一个趋势动词——2021 只有一个点，写 increased 就是编造。",
+      "pitfalls": [
+        "写 Greece increased to 34% 或 Norway fell to 7%。图上只有一个年份，这类句子不是语法错，是事实错，TR/TA 会直接扣。",
+        "五个国家按图上顺序一国一句，五句话结构一模一样（X is 34%, Y is 24%...），读完没有任何组织，Coherence 上不去。",
+        "把 34 和 7 的差距写成 Norway is five times lower than Greece——英文里 five times lower 逻辑上不成立，应说 Greece is almost five times Norway.。",
+        "Overview 罗列全部五个数字。概述要的是梯队结构，数字留给细节段，否则两段功能重复。"
+      ],
+      "keywords": [
+        { "term": "three distinct tiers", "para": 1, "quote": "the five countries can be grouped into three distinct tiers", "label": "定位第 B 段" },
+        { "term": "almost five times the lowest", "para": 1, "quote": "with the highest figure almost five times the lowest", "label": "定位第 B 段" },
+        { "term": "has by far the highest share", "para": 2, "quote": "Greece has by far the highest share, at 34%", "label": "定位第 C 段" },
+        { "term": "form the middle tier", "para": 2, "quote": "Italy and South Korea form the middle tier", "label": "定位第 C 段" },
+        { "term": "negligible", "para": 2, "quote": "The one-point difference between them is negligible", "label": "定位第 C 段" },
+        { "term": "stands at", "para": 3, "quote": "Germany stands at 10% and Norway at 7%", "label": "定位第 D 段" },
+        { "term": "a gentle spread", "para": 3, "quote": "which is why the chart reads as three steps rather than a gentle spread", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

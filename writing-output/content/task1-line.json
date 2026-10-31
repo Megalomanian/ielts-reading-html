@@ -1,0 +1,110 @@
+{
+  "cases": [
+    {
+      "id": "t1-line",
+      "task": "task1",
+      "cat": "line",
+      "catLabel": "折线图",
+      "catEn": "Line graph",
+      "catNote": "考频最高的一类，核心是「方向 + 幅度 + 交叉点」",
+      "order": 1,
+      "title": "三家伦敦博物馆的访客量",
+      "titleEn": "Visitor numbers at three London museums, 2000–2020",
+      "promptEn": "The graph below shows the number of visitors to three museums in London in 2000, 2010 and 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "promptZh": "下图显示 2000、2010、2020 年伦敦三家博物馆的访客量。<br><b>任务要求：</b>选取并报告主要特征，在相关处作比较。<br><b>写之前先想清楚：</b>三条线走的是三种完全不同的路径——持续上升、先升后降、持续下降。Overview 就是把这三条路径一句话说清，细节段再拿数字当证据。",
+      "chart": {
+        "kind": "line",
+        "caption": "Visitor numbers at three London museums (thousands), 2000–2020",
+        "unit": "thousand",
+        "categories": ["2000", "2010", "2020"],
+        "series": [
+          { "name": "Museum A", "values": [500, 650, 800] },
+          { "name": "Museum B", "values": [600, 900, 700] },
+          { "name": "Museum C", "values": [400, 300, 200] }
+        ],
+        "note": "数据按考场回忆复原为示意数据，用于练结构，不保证与原卷一致。"
+      },
+      "tags": ["趋势", "比较", "三点时间轴"],
+      "minutes": 20,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-28", "venue": "湖南开放大学雅思机考考点" },
+      "essay": [
+        {
+          "text": "The line graph compares the number of visitors to three museums in London at three points in time: 2000, 2010 and 2020.",
+          "gist": "开头：改写题目，只交代「谁、在哪、什么时候、什么单位」，不加任何评价。"
+        },
+        {
+          "text": "Overall, Museum A attracted a steadily growing audience and finished the period as the most popular of the three, whereas Museum C recorded an uninterrupted decline. Museum B, by contrast, peaked in 2010 before losing visitors.",
+          "gist": "概述：一句话把三条路径全交代完——上升、下降、先升后降。不写任何具体数字。"
+        },
+        {
+          "text": "In 2000, Museum B was the leading attraction with 600,000 visitors, followed by Museum A at 500,000 and Museum C at 400,000. Over the following decade, however, A's figure climbed to 650,000 while B rose far more sharply to 900,000. Museum C, meanwhile, slipped to 300,000, already the least visited of the three. A's growth was also the steadiest: the museum added roughly 150,000 visitors in each decade, whereas B's trajectory changed direction twice.",
+          "gist": "细节段一：先给起点排名，再写 2000–2010 的三条变化，用 however / while / meanwhile 把三条线缝在一段里；末句用「每十年稳定增加约 15 万」把 A 与 B 的波动区分开。"
+        },
+        {
+          "text": "Between 2010 and 2020 this pattern reversed. B fell back to 700,000 and surrendered first place to A, whose visitor numbers reached 800,000 at the end of the period. C continued its downward path, ending at 200,000, or exactly half its figure for 2000.",
+          "gist": "细节段二：写后半段的排名互换，并用「half its figure for 2000」给结尾一个可计算的对比，而不是干巴巴报数。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Achievement",
+          "v": "7.5",
+          "p": "三个时间点、三条线全部覆盖，且区分了「起点最高」「中途峰值」「终点最高」三个不同身份。Overview 用了 {{steadily growing audience}} 和 {{uninterrupted decline}} 两种不同性质的描述，不是笼统说「都变了」。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "分段按时间切（2000–2010 / 2010–2020），而不是按博物馆切——按主体分会变成三份互不相干的流水账。连接词 however、while、meanwhile、by contrast 都指向真实的逻辑转折；B {{peaked in 2010}} 这件事被放在概述里先交代，细节段才有地方展开。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "用 {{surrendered first place to}} 代替 became less popular than，用 {{slipped to}} 代替 decreased to，动词带出了「位置」和「轻微下滑」的差别。数字表达也有变化：600,000 / half its figure for 2000，避免通篇百分比。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "结尾的 {{whose visitor numbers reached 800,000}} 是非限制性定语从句，把「A 超过 B」和「A 的具体数字」压进一句，是 7 分档典型的紧凑写法。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 句", "d": "改写题目。注意保留了 three points in time 这个设定，因为后面确实只有三个点，含糊说 over the period 反而不准。" },
+        { "n": "第 2 句", "d": "Overview 前半：A 上升、C 下降。用 {{steadily growing audience}} 体现「稳定」，这是从 500→650→800 的等距增长读出来的。" },
+        { "n": "第 3 句", "d": "Overview 后半：B 的「先升后降」。peak 是这类双段走势的固定抓手。" },
+        { "n": "第 4 句", "d": "细节起点。给出三个数字并顺带排出名次，为后文的「换位」埋伏笔。" },
+        { "n": "第 5–6 句", "d": "2000–2010：A 温和增长、B 暴涨、C 下滑。三句并成一段靠 however / while / meanwhile 三个连接。末句 {{added roughly 150,000 visitors}} 把 A 的「匀速」量化出来——同样都在涨，A 的形状是一条直线，B 是一条折线，这个差别不说，Overview 里的 steadily 就没有证据。" },
+        { "n": "第 7–9 句", "d": "2010–2020：B 回落并丢榜首，A 登顶，C 减半。结尾用 half 收一个漂亮的对照。" }
+      ],
+      "lexis": [
+        { "w": "attract an audience", "m": "吸引观众（比 have visitors 更主动）", "note": "博物馆、景点、演出类题目的通用动词" },
+        { "w": "uninterrupted decline", "m": "不间断的下降", "note": "三点都往下走时，比 decreased 精确" },
+        { "w": "peak at / peak in", "m": "达到峰值", "note": "先升后降的图一定要用" },
+        { "w": "surrender first place to", "m": "把第一名让给", "note": "排名互换时的加分表达" },
+        { "w": "slip to", "m": "小幅下滑到", "note": "区别于 plunge（暴跌），幅度小的时候用它" },
+        { "w": "the leading attraction", "m": "最受欢迎的景点", "note": "同义替换 the most popular" }
+      ],
+      "grammar": [
+        "非限制性定语从句：<code>A, whose visitor numbers reached 800,000, ...</code> —— 补充信息而不打断主句，7 分常用。",
+        "对比状语从句：<code>whereas Museum C recorded ...</code> —— 一句里放两条相反趋势，比分成两句更紧凑。",
+        "分词/介词短语收尾：<code>ending at 200,000, or exactly half its figure for 2000</code> —— 用 or 引出解释性同位语，避免再起一句。"
+      ],
+      "examiner": "这篇最容易被忽略的一点是：<strong>它没有把三个博物馆各写一段</strong>。按主体分段是 5.5–6 分最常见的结构病，读者读完只知道三家各自发生了什么，不知道它们之间的关系。按时间分段、在每段里横向比，才叫 make comparisons where relevant。另外注意 Overview 里一个数字都没有——概述给的是「形状」，不是「数据」。",
+      "pitfalls": [
+        "把 2000、2010、2020 三个点写成三句「In 2000..., In 2010..., In 2020...」，读起来像流水账，Coherence 直接掉档。",
+        "Overview 里堆数字。概述的任务是让读者先拿到一张地图，数字属于细节段。",
+        "把 half its figure for 2000 算错：400,000 → 200,000 才是减半，别套到 B 身上。",
+        "通篇用 increase / decrease。这两个词没错，但重复四次以上就是词汇不足的信号。"
+      ],
+      "keywords": [
+        { "term": "steadily growing audience", "para": 1, "quote": "Museum A attracted a steadily growing audience and finished the period as the most popular of the three", "label": "定位第 B 段" },
+        { "term": "uninterrupted decline", "para": 1, "quote": "whereas Museum C recorded an uninterrupted decline", "label": "定位第 B 段" },
+        { "term": "peaked in 2010", "para": 1, "quote": "Museum B, by contrast, peaked in 2010 before losing visitors", "label": "定位第 B 段" },
+        { "term": "added roughly 150,000 visitors", "para": 2, "quote": "A's growth was also the steadiest: the museum added roughly 150,000 visitors in each decade", "label": "定位第 C 段" },
+        { "term": "surrendered first place to", "para": 3, "quote": "B fell back to 700,000 and surrendered first place to A", "label": "定位第 D 段" },
+        { "term": "slipped to", "para": 2, "quote": "Museum C, meanwhile, slipped to 300,000", "label": "定位第 C 段" },
+        { "term": "whose visitor numbers reached 800,000", "para": 3, "quote": "A, whose visitor numbers reached 800,000 at the end of the period", "label": "定位第 D 段" }
+      ]
+    }
+  ]
+}

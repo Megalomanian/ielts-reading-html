@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "id": "t2-discuss",
+      "task": "task2",
+      "cat": "discuss",
+      "catLabel": "双边讨论",
+      "catEn": "Discuss both views",
+      "catNote": "双边讨论最容易死在「偏心」：一方写两段、另一方一句带过，或者两边都讲完就收笔，把自己的立场忘在开头。题目要的是两份等重的论证，加一份明确归属的自己的判断。",
+      "order": 12,
+      "title": "气候变化对商业是威胁还是机会",
+      "titleEn": "Climate change: a threat or an opportunity for business?",
+      "promptEn": "Some people think climate change has a negative impact on business, while others think that it provides more business opportunities. Discuss both views and give your own opinion.",
+      "promptZh": "题目给出两种对立判断：气候变化损害商业，或者它带来更多商业机会。<br><b>任务要求：</b>讨论双方观点，并给出自己的意见——三件事都要做，缺一件就掉分。<br><b>写之前先想清楚：</b>discuss both views 要求两方篇幅大致对等，而 own opinion 必须单独落到某一段或结尾，不能只在开头敷衍一句。最省力的做法是给双方各自一个成立条件，再让自己的立场去解释「什么条件下哪一方占上风」。",
+      "tags": ["环境与商业", "双边论证", "条件式立场"],
+      "minutes": 40,
+      "band": "7.5+",
+      "exam": { "date": "2026-10-17", "venue": "British Council 广州雅思机考考点" },
+      "essay": [
+        {
+          "text": "Climate change is now described both as a risk that firms must survive and as a market that firms can enter. This essay examines both readings before arguing that which one holds depends on the horizon a company works to.",
+          "gist": "开头：一句并列改写题目里的两种说法（risk / market），第二句预告立场是「看时间尺度」，只说 depends on，不在这里给条件。"
+        },
+        {
+          "text": "The pessimistic case rests on cost and disruption. Extreme weather closes ports and factories, insurance premiums climb for exposed sites, and carbon pricing charges every tonne emitted. For sectors tied to a fixed location, such as farming and coastal property, the arithmetic is harsh: the physical base of the business is being eroded, and no efficiency saving recovers it.",
+          "gist": "观点一：威胁论。给的是成本机制——天气、保费、碳价三重挤压，最后用「选址无法搬走」收口。"
+        },
+        {
+          "text": "The optimistic case points to the demand that the same pressure creates. A levy that makes emissions expensive opens a market for low-carbon substitutes, and a firm that redesigns its product early can charge a premium and attract capital that rivals cannot. Renewable installation and grid repair exist because the old arrangement became costly. On this reading, a constraint on one business model is a vacancy for another.",
+          "gist": "观点二：机会论。机制是「监管制造需求」——同一部法规既抬高高碳成本，也腾出低碳市场。"
+        },
+        {
+          "text": "In my view these are less rivals than answers to different questions about time. Over one to three years, adaptation is pure cost: equipment is replaced and margins narrow. Over ten to fifteen years, the firms that invested early set the standard that others must then buy into. What separates the two is whether a business can reinvest before the physical risk arrives, rather than treating each levy as a one-off charge.",
+          "gist": "自己的立场：不是二选一，而是按时间尺度分。短期是成本，长期是机会，真正的变量是能否在风险到来前再投资。"
+        },
+        {
+          "text": "The honest answer, then, is conditional: climate change is a threat to firms whose assets are fixed and whose planning stops at the next reporting cycle, and an opportunity to those able to fund a transition. Which group grows larger depends less on the climate itself than on how quickly policy makes the cost of delay visible.",
+          "gist": "结尾：把立场写成条件句——资产固定且只看短周期的是威胁，能融资转型的是机会；最后一句把责任推回政策设计。"
+        }
+      ],
+      "scores": [
+        {
+          "k": "Task Response",
+          "v": "7.5",
+          "p": "三件事都做到了，而且分量清楚：第 B、C 段分别是 59 和 68 词，一段讲成本机制、一段讲需求机制，没有一段被写成「顺便提一下」。自己的立场单独占第 D 段，并且是 {{answers to different questions about time}} 这种有条件判断，不是一个模糊的 both are important。这个判断还提前埋在开头：{{the horizon a company works to}} 让读者从第一段起就知道「时间尺度」会是全文的裁决标准。结尾再用 {{is conditional}} 把条件重申一遍，own opinion 因此有首有尾。若把第 D 段删掉、只在开头写 I think both have some truth，Task Response 会直接掉到 6，因为 discuss 题最常被扣的就是「讨论了但没判断」。"
+        },
+        {
+          "k": "Coherence & Cohesion",
+          "v": "7.5",
+          "p": "两方段落用对称的信号词开场：The pessimistic case / The optimistic case，读者立刻知道自己在读第几种说法，这比 Firstly / Secondly 更贴题。第 D 段用 In my view 明确切换身份，从「复述他人」转到「自己判断」，这是双边讨论最需要的一次转折。段末的 On this reading 和 The honest answer, then 都是把上一段收束后再推进，而不是硬接。"
+        },
+        {
+          "k": "Lexical Resource",
+          "v": "7.5",
+          "p": "{{physical base of the business is being eroded}} 把「受损」落到具体资产上，比 business is affected negatively 精确一个档；{{a vacancy for another}} 用空缺隐喻说明市场替代，避免了 opportunities are created 这种被动套话。第 D 段 {{one-off charge}} 是商业语域里很自然的说法，让「把碳税当一次性支出」这个错误听起来像内行判断。"
+        },
+        {
+          "k": "Grammatical Range",
+          "v": "7.5",
+          "p": "第 C 段 <code>a firm that redesigns its product early can charge a premium</code> 用定语从句把条件压进主语，避免 if a firm redesigns ... it can ... 的松散结构。第 D 段 <code>the firms that invested early set the standard that others must then buy into</code> 连用两个定语从句，主语和宾语各自带信息，是 7 分档少见的紧凑。第 E 段 <code>whose assets are fixed and whose planning stops</code> 并列两个 whose，把两类弱点绑在同一个群体上。"
+        }
+      ],
+      "structure": [
+        { "n": "第 1 段第 1 句", "d": "改写题目里的两种说法，用 risk that firms must survive / market that firms can enter 这一对动词短语，顺手把「威胁」和「机会」各自的立场色彩定下来。" },
+        { "n": "第 1 段第 2 句", "d": "预告自己的立场是「看时间尺度」，但只说 depends on，不说具体条件——条件留给第 D 段，避免开头就把话说尽。" },
+        { "n": "第 2 段", "d": "威胁论。三层成本：极端天气、保险、碳价；再用「选址固定」的行业把论证落到无法回避的地方。这一段不评价对错，只把机制讲透。" },
+        { "n": "第 3 段", "d": "机会论。承接上一段的 carbon pricing，指出同一政策同时制造需求——两段因此不是并列的两个话题，而是同一机制的两面。" },
+        { "n": "第 4 段前半", "d": "own opinion 的第一层：先否定「二选一」的框架（less rivals than answers to different questions），把争论改写成「两个不同时间问题各自的答案」。" },
+        { "n": "第 4 段后半", "d": "own opinion 的第二层：给时间刻度（1–3 年 / 10–15 年），再给一个可检验的变量——能否在物理风险到来前再投资。立场因此不是态度，而是判断标准。" },
+        { "n": "第 5 段", "d": "结论用 conditional 复述条件，并把判断标准从气候本身移到政策速度——结尾因此有新增信息，而不是重复第 4 段。" }
+      ],
+      "lexis": [
+        { "w": "rests on", "m": "建立在……之上", "note": "论述某一方观点时，比 says / thinks 更像分析" },
+        { "w": "insurance premiums climb", "m": "保费上涨", "note": "climb 用于缓慢持续上升，比 increase 有方向感" },
+        { "w": "eroded", "m": "被侵蚀", "note": "描述长期、渐进的价值流失，比 damaged 更贴合气候变化" },
+        { "w": "charge a premium", "m": "收取溢价", "note": "商业题里表示「卖得贵还卖得掉」，暗含竞争优势" },
+        { "w": "one-off charge", "m": "一次性费用", "note": "用来刻画短视决策，与长期投资形成对照" },
+        { "w": "buy into", "m": "接受、跟进（某个标准）", "note": "比 accept 多一层「不得不投入」的意味" }
+      ],
+      "grammar": [
+        "定语从句压缩条件：<code>a firm that redesigns its product early can charge a premium</code> —— 把 if 从句的信息塞进主语，句子更紧。",
+        "双重定语从句：<code>the firms that invested early set the standard that others must then buy into</code> —— 主语、宾语各带一个从句，信息密度高但主干仍是主谓宾。",
+        "并列 whose：<code>firms whose assets are fixed and whose planning stops at the next reporting cycle</code> —— 一个名词挂两个限定，避免拆成两句后重复 firms。"
+      ],
+      "examiner": "这篇最容易被忽略的判断在第 3 段：<strong>机会论不是另起一个话题，而是接着第 2 段的 carbon pricing 往下推</strong>。很多考生写双边讨论时把两方当成两个互不相关的清单——一段列天气灾害，一段列新能源公司——读完只得到两堆事实，得不到「同一件事为什么会有两种解读」。真正的讨论要共享一个机制：监管抬高旧模式的成本，同时为新模式腾出空间。共享机制一建立，第 4 段的「取决于时间尺度」才有地方生根，否则那句立场只是硬贴上去的。",
+      "pitfalls": [
+        "只讨论一方。题目写 discuss both views，少一方就是任务未完成，其余三项分数再高也封顶 6。",
+        "两方篇幅失衡：威胁段写 100 词、机会段写 30 词，考官会认为你没有能力展开不熟悉的那一方，而不是「有取舍」。",
+        "自己的立场只在开头出现一句 I agree with both，后文再没回来。own opinion 需要一个独立段落或至少一个明确收尾。",
+        "结尾把两段内容各抄一句，既不判断也不加条件。结论应给出「在什么条件下哪一方成立」，这才是 discuss 题的加分位置。"
+      ],
+      "keywords": [
+        { "term": "the horizon a company works to", "para": 0, "quote": "depends on the horizon a company works to", "label": "定位第 A 段" },
+        { "term": "physical base of the business is being eroded", "para": 1, "quote": "the physical base of the business is being eroded", "label": "定位第 B 段" },
+        { "term": "a vacancy for another", "para": 2, "quote": "a constraint on one business model is a vacancy for another", "label": "定位第 C 段" },
+        { "term": "answers to different questions about time", "para": 3, "quote": "these are less rivals than answers to different questions about time", "label": "定位第 D 段" },
+        { "term": "one-off charge", "para": 3, "quote": "rather than treating each levy as a one-off charge", "label": "定位第 D 段" },
+        { "term": "is conditional", "para": 4, "quote": "The honest answer, then, is conditional", "label": "定位第 E 段" }
+      ]
+    }
+  ]
+}
