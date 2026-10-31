@@ -535,7 +535,22 @@ mark.locate-hit{
 
   function scrollToTarget(para, target){
     // Single scroll container now: always scroll the page, never a nested pane.
-    target.scrollIntoView({behavior: reduceMotion ? "auto" : "smooth", block: "center", inline: "nearest"});
+    // Long jumps (a case can be taller than screens) look like a blur when smooth-scrolled,
+    // so only animate short hops.
+    var far = Math.abs(target.getBoundingClientRect().top - window.innerHeight / 2) > window.innerHeight * 1.5;
+    var behavior = (reduceMotion || far) ? "instant" : "smooth";
+    var from = Math.round(window.scrollY);
+    // "instant" (not "auto") because CSS html{scroll-behavior:smooth} would still animate on "auto".
+    target.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+    if(behavior === "smooth"){
+      // Some browsers and embedded views suppress smooth scrolling entirely. If nothing has
+      // moved shortly after the request, jump instead of leaving the reader where they were.
+      window.setTimeout(function(){
+        if(Math.abs(Math.round(window.scrollY) - from) < 2){
+          target.scrollIntoView({behavior: "instant", block: "center", inline: "nearest"});
+        }
+      }, 200);
+    }
   }
 
   function locate(btn){
@@ -571,11 +586,9 @@ mark.locate-hit{
     backBtn.addEventListener("click", function(){
       if(!activeKw) return;
       backBtn.hidden = true;
-      window.requestAnimationFrame(function(){
-        activeKw.scrollIntoView({behavior: reduceMotion ? "auto" : "smooth", block: "center"});
-        activeKw.classList.add("flash");
-        window.setTimeout(function(){ activeKw.classList.remove("flash"); }, 1300);
-      });
+      scrollToTarget(null, activeKw);
+      activeKw.classList.add("flash");
+      window.setTimeout(function(){ activeKw.classList.remove("flash"); }, 1300);
     });
   }
 
